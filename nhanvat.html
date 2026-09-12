@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Nét Việt — Lịch sử trong từng nét vẽ
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="./stylecss.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<header class="top-header">
+
+    <section class="logo-area">
+
+        <span class="logo-symbol">
+            ♨
+        </span>
+
+        <section>
+
+            <h1>
+                Nét Việt
+            </h1>
+
+            <p>
+                Lịch sử trong từng nét vẽ
+            </p>
+
+        </section>
+
+    </section>
+
+
+    <nav class="navigation">
+
+        <a
+            href="./index.html"
+            class="active"
+        >
+            Trang chủ
+        </a>
+
+        <a href="./khampha.html">
+            Khám phá
+        </a>
+
+        <a href="./tacpham.html">
+            Tác phẩm
+        </a>
+
+        <a href="./nhanvat.html">
+            Nhân vật
+        </a>
+
+        <a href="./cauchuyen.html">
+            Câu chuyện
+        </a>
+
+        <a href="./vechungtoi.html">
+            Về chúng tôi
+        </a>
+
+    </nav>
+
+
+    <section class="header-actions">
+
+        <input
+            type="search"
+            id="searchInput"
+            placeholder="Tìm kiếm tác phẩm, nhân vật, thời kỳ..."
+        >
+
+        <button
+            class="icon-button"
+            id="themeButton"
+        >
+            ☼
+        </button>
+
+        <button class="icon-button">
+            ♙
+        </button>
+
+    </section>
+
+</header>
+
+<main>
+
+    <section
+        class="hero"
+        id="home"
+    >
+
+        <img
+            class="hero-banner"
+            src="./images/banner5.png"
+            alt="Việt Nam qua nghệ thuật"
+        >
+
+
+        <section class="hero-overlay"></section>
+
+
+        <section class="hero-content">
+
+            <p class="small-title">
+                VIỆT NAM QUA NGHỆ THUẬT
+            </p>
+
+
+            <h2>
+
+                Nhìn Lịch Sử<br>
+
+                Qua Nghệ Thuật
+
+            </h2>
+
+
+            <p class="hero-description">
+
+                Khám phá hành trình ngàn năm văn hiến Việt Nam
+                qua những kiệt tác nghệ thuật đặc sắc.
+
+            </p>
+
+
+            <button
+                class="primary-button"
+                onclick="scrollToExplore()"
+            >
+
+                Khám phá ngay
+
+                <span>
+                    →
+                </span>
+
+            </button>
+
+        </section>
+
+
+
+        <section class="hero-quote">
+
+            <p>
+
+                “Mỗi tác phẩm nghệ thuật<br>
+
+                là một trang sử,<br>
+
+                mỗi nét vẽ là một lời kể<br>
+
+                về dân tộc.”
+
+            </p>
+
+        </section>
+
+
+
+        <section class="hero-counter">
+
+            <button
+                onclick="previousHero()"
+            >
+                ←
+            </button>
+
+
+            <span id="heroNumber">
+                01
+            </span>
+
+
+            <small>
+                / 05
+            </small>
+
+
+            <button
+                onclick="nextHero()"
+            >
+                →
+            </button>
+
+        </section>
+
+    </section>
+  <!-- =================================================
+     GIỚI THIỆU
+================================================= -->
+
+<section class="character-intro">
+
+    <p class="intro-label">
+        NHỮNG GƯƠNG MẶT CỦA LỊCH SỬ
+    </p>
+
+    <h2>
+        Mỗi con người<br>
+        là một dấu ấn
+    </h2>
+
+    <p>
+        Lịch sử Việt Nam được tạo nên từ những con người
+        với những câu chuyện, lý tưởng và đóng góp khác nhau.
+        Họ xuất hiện trong những thời đại khác nhau nhưng
+        cùng góp phần tạo nên diện mạo của đất nước.
+    </p>
+
+</section>
+
+
+<!-- =================================================
+     NHÂN VẬT TIÊU BIỂU
+================================================= -->
+
+<section class="featured-character">
+
+    <figure class="featured-image">
+        <img src="./images/lythuongkiet.png" alt="Lý Thường Kiệt">
+    </figure>
+
+    <article class="featured-content">
+
+        <p class="featured-label">NHÂN VẬT TIÊU BIỂU</p>
+
+        <h2>Lý Thường Kiệt</h2>
+
+        <p class="featured-period">
+            1019 – 1105
+        </p>
+
+        <p>
+            Lý Thường Kiệt là một danh tướng kiệt xuất của Đại Việt,
+            nổi bật với tài năng quân sự và những đóng góp lớn trong
+            công cuộc bảo vệ đất nước. Ông gắn liền với chiến thắng
+            trên phòng tuyến sông Như Nguyệt và bài thơ
+            <em>Nam quốc sơn hà</em>, thường được xem là một trong
+            những bản tuyên ngôn độc lập sớm của dân tộc Việt Nam.
+        </p>
+
+        <a href="#" class="featured-button">
+            Khám phá nhân vật
+        </a>
+
+    </article>
+
+</section>
+
+
+<!-- =================================================
+     NHÂN VẬT LỊCH SỬ
+================================================= -->
+
+<section class="character-group">
+
+    <header class="group-heading">
+
+        <p class="group-number">
+            01
+        </p>
+
+        <section>
+            <p class="group-label">
+                DỰNG NƯỚC & GIỮ NƯỚC
+            </p>
+
+            <h2>
+                Nhân vật lịch sử
+            </h2>
+
+            <p>
+                Những vị anh hùng gắn với những bước ngoặt
+                quan trọng của lịch sử dân tộc.
+            </p>
+        </section>
+
+    </header>
+
+
+    <section class="character-grid">
+
+        <article class="character-card">
+
+            <figure>
+                <img src="./images/leloi.png"
+                     alt="Lê Lợi">
+            </figure>
+
+            <section class="card-content">
+
+                <span class="card-number">
+                    01
+                </span>
+
+                <h3>
+                    Lê Lợi
+                </h3>
+
+                <span class="character-period">
+                    1385 — 1433
+                </span>
+
+                <p>
+                    Lãnh tụ cuộc khởi nghĩa Lam Sơn và vị vua
+                    sáng lập triều Lê sơ.
+                </p>
+
+                <a href="#">
+                    Khám phá →
+                </a>
+
+            </section>
+
+        </article>
+
+
+        <article class="character-card">
+
+            <figure>
+                <img src="./images/tranhungdao.jpg"
+                     alt="Trần Hưng Đạo">
+            </figure>
+
+            <section class="card-content">
+
+                <span class="card-number">
+                    02
+                </span>
+
+                <h3>
+                    Trần Hưng Đạo
+                </h3>
+
+                <span class="character-period">
+                    1228 — 1300
+                </span>
+
+                <p>
+                    Danh tướng nhà Trần, nổi tiếng với tài thao lược
+                    trong các cuộc kháng chiến chống Nguyên — Mông.
+                </p>
+
+                <a href="#">
+                    Khám phá →
+                </a>
+
+            </section>
+
+        </article>
+
+
+        <article class="character-card">
+
+            <figure>
+                <img src="./images/quangtrung.jpg"
+                     alt="Quang Trung">
+            </figure>
+
+            <section class="card-content">
+
+                <span class="card-number">
+                    03
+                </span>
+
+                <h3>
+                    Quang Trung
+                </h3>
+
+                <span class="character-period">
+                    1753 — 1792
+                </span>
+
+                <p>
+                    Vị hoàng đế Tây Sơn với chiến thắng Ngọc Hồi —
+                    Đống Đa vang dội vào mùa xuân năm 1789.
+                </p>
+
+                <a href="#">
+                    Khám phá →
+                </a>
+
+            </section>
+
+        </article>
+
+    </section>
+
+</section>
+
+
+<!-- =================================================
+     DANH NHÂN VĂN HỌC
+================================================= -->
+
+<section class="character-group literary-group">
+
+    <header class="group-heading">
+
+        <p class="group-number">
+            02
+        </p>
+
+        <section>
+            <p class="group-label">
+                NGÔN TỪ & TÂM HỒN
+            </p>
+
+            <h2>
+                Danh nhân văn học
+            </h2>
+
+            <p>
+                Những tác giả để lại những tác phẩm có giá trị
+                lớn trong kho tàng văn học Việt Nam.
+            </p>
+        </section>
+
+    </header>
+
+
+    <section class="character-grid">
+
+        <article class="character-card">
+
+            <figure>
+                <img src="./images/nguyendu.png"
+                     alt="Nguyễn Du">
+            </figure>
+
+            <section class="card-content">
+
+                <span class="card-number">
+                    01
+                </span>
+
+                <h3>
+                    Nguyễn Du
+                </h3>
+
+                <span class="character-period">
+                    1766 — 1820
+                </span>
+
+                <p>
+                    Đại thi hào dân tộc, tác giả Truyện Kiều
+                    và nhiều tác phẩm có giá trị nhân văn sâu sắc.
+                </p>
+
+                <a href="#">
+                    Khám phá →
+                </a>
+
+            </section>
+
+        </article>
+
+
+        <article class="character-card">
+
+            <figure>
+                <img src="./images/chuvanan.jpg"
+                     alt="Chu Văn An">
+            </figure>
+
+            <section class="card-content">
+
+                <span class="card-number">
+                    02
+                </span>
+
+                <h3>
+                    Chu Văn An
+                </h3>
+
+                <span class="character-period">
+                    1292 — 1370
+                </span>
+
+                <p>
+                    Nhà giáo tiêu biểu thời Trần, nổi tiếng
+                    bởi học vấn, khí tiết và tinh thần chính trực.
+                </p>
+
+                <a href="#">
+                    Khám phá →
+                </a>
+
+            </section>
+
+        </article>
+
+
+        <article class="character-card">
+
+            <figure>
+                <img src="./images/nguyengiathieu.jpg"
+                     alt="Nguyễn Gia Thiều">
+            </figure>
+
+            <section class="card-content">
+
+                <span class="card-number">
+                    03
+                </span>
+
+                <h3>
+                    Nguyễn Gia Thiều
+                </h3>
+
+                <span class="character-period">
+                    1741 — 1798
+                </span>
+
+                <p>
+                    Tác giả Cung oán ngâm khúc, một tác phẩm
+                    tiêu biểu của văn học Việt Nam thế kỷ XVIII.
+                </p>
+
+                <a href="#">
+                    Khám phá →
+                </a>
+
+            </section>
+
+        </article>
+
+    </section>
+
+</section>
+
+
+<!-- =================================================
+     TƯ TƯỞNG & TRI THỨC
+================================================= -->
+
+<section class="character-group thought-group">
+
+    <header class="group-heading">
+
+        <p class="group-number">
+            03
+        </p>
+
+        <section>
+            <p class="group-label">
+                TRI THỨC & NHÂN NGHĨA
+            </p>
+
+            <h2>
+                Tư tưởng & giáo dục
+            </h2>
+
+            <p>
+                Những nhân vật góp phần xây dựng nền tảng
+                tư tưởng, giáo dục và đạo lý của xã hội Việt Nam.
+            </p>
+        </section>
+
+    </header>
+
+
+    <section class="character-grid">
+
+        <article class="character-card">
+
+            <figure>
+                <img src="./images/nguyentrai.jpg"
+                     alt="Nguyễn Trãi">
+            </figure>
+
+            <section class="card-content">
+
+                <span class="card-number">
+                    01
+                </span>
+
+                <h3>
+                    Nguyễn Trãi
+                </h3>
+
+                <span class="character-period">
+                    1380 — 1442
+                </span>
+
+                <p>
+                    Nhà tư tưởng lớn với quan niệm lấy nhân nghĩa
+                    và cuộc sống của nhân dân làm nền tảng.
+                </p>
+
+                <a href="#">
+                    Khám phá →
+                </a>
+
+            </section>
+
+        </article>
+
+
+        <article class="character-card">
+
+            <figure>
+                <img src="./images/chuvanan.jpg"
+                     alt="Chu Văn An">
+            </figure>
+
+            <section class="card-content">
+
+                <span class="card-number">
+                    02
+                </span>
+
+                <h3>
+                    Chu Văn An
+                </h3>
+
+                <span class="character-period">
+                    1292 — 1370
+                </span>
+
+                <p>
+                    Người thầy nổi tiếng với tinh thần trọng đạo,
+                    coi trọng việc học và giữ gìn khí tiết.
+                </p>
+
+                <a href="#">
+                    Khám phá →
+                </a>
+
+            </section>
+
+        </article>
+
+
+        <article class="character-card">
+
+            <figure>
+                <img src="./images/nguyenbinhkhiem.jpg"
+                     alt="Nguyễn Bỉnh Khiêm">
+            </figure>
+
+            <section class="card-content">
+
+                <span class="card-number">
+                    03
+                </span>
+
+                <h3>
+                    Nguyễn Bỉnh Khiêm
+                </h3>
+
+                <span class="character-period">
+                    1491 — 1585
+                </span>
+
+                <p>
+                    Danh sĩ, nhà thơ và nhà tư tưởng nổi tiếng
+                    với tư tưởng sống thanh cao và sâu sắc.
+                </p>
+
+                <a href="#">
+                    Khám phá →
+                </a>
+
+            </section>
+
+        </article>
+
+    </section>
+
+</section>
+
+
+<!-- =================================================
+     VĂN HÓA DÂN GIAN
+================================================= -->
+
+<section class="character-group folk-group">
+
+    <header class="group-heading">
+
+        <p class="group-number">
+            04
+        </p>
+
+        <section>
+            <p class="group-label">
+                DI SẢN & ĐỜI SỐNG
+            </p>
+
+            <h2>
+                Văn hóa dân gian
+            </h2>
+
+            <p>
+                Những con người gắn với các loại hình nghệ thuật,
+                phong tục và sinh hoạt truyền thống của người Việt.
+            </p>
+        </section>
+
+    </header>
+
+
+    <section class="character-grid">
+
+        <article class="character-card">
+
+            <figure>
+                <img src="./images/ongdo.png"
+                     alt="Ông đồ">
+            </figure>
+
+            <section class="card-content">
+
+                <span class="card-number">
+                    01
+                </span>
+
+                <h3>
+                    Ông đồ
+                </h3>
+
+                <span class="character-period">
+                    Văn hóa truyền thống
+                </span>
+
+                <p>
+                    Hình ảnh gắn với chữ Hán, chữ Nôm và
+                    phong tục xin chữ trong đời sống người Việt.
+                </p>
+
+                <a href="#">
+                    Khám phá →
+                </a>
+
+            </section>
+
+        </article>
+
+
+        <article class="character-card">
+
+            <figure>
+                <img src="./images/nghenhancatru.png"
+                     alt="Nghệ nhân ca trù">
+            </figure>
+
+            <section class="card-content">
+
+                <span class="card-number">
+                    02
+                </span>
+
+                <h3>
+                    Nghệ nhân ca trù
+                </h3>
+
+                <span class="character-period">
+                    Di sản văn hóa Việt Nam
+                </span>
+
+                <p>
+                    Những người góp phần truyền lại nghệ thuật
+                    ca trù qua nhiều thế hệ.
+                </p>
+
+                <a href="#">
+                    Khám phá →
+                </a>
+
+            </section>
+
+        </article>
+
+
+        <article class="character-card">
+
+            <figure>
+                <img src="./images/nghenhanlangnghe.png"
+                     alt="Nghệ nhân làng nghề">
+            </figure>
+
+            <section class="card-content">
+
+                <span class="card-number">
+                    03
+                </span>
+
+                <h3>
+                    Nghệ nhân làng nghề
+                </h3>
+
+                <span class="character-period">
+                    Nghề thủ công truyền thống
+                </span>
+
+                <p>
+                    Những người gìn giữ kỹ thuật làm gốm, dệt,
+                    chạm khắc và các nghề thủ công lâu đời.
+                </p>
+
+                <a href="#">
+                    Khám phá →
+                </a>
+
+            </section>
+
+        </article>
+
+    </section>
+
+</section>
+
+
+<!-- =================================================
+     CÂU NÓI CUỐI TRANG
+================================================= -->
+
+<section class="character-quote">
+
+    <p class="quote-mark">
+        “
+    </p>
+
+    <blockquote>
+        Việc nhân nghĩa cốt ở yên dân,<br>
+        quân điếu phạt trước lo trừ bạo.
+    </blockquote>
+
+    <p>
+        Nguyễn Trãi — Bình Ngô đại cáo
+    </p>
+
+</section>
+</main>
+
+  
+      <footer>
+
+
+        <section class="footer-brand">
+
+
+            <h2>
+
+                Nét Việt
+
+            </h2>
+
+
+            <p>
+
+                Lịch sử trong từng nét vẽ
+
+            </p>
+
+
+        </section>
+
+
+
+        <nav class="footer-links">
+
+
+            <section>
+
+
+                <h3>
+
+                    Khám phá
+
+                </h3>
+
+
+                <a href="#artworks">
+
+                    Tác phẩm
+
+                </a>
+
+
+                <a href="#figures">
+
+                    Nhân vật
+
+                </a>
+
+
+                <a href="#explore">
+
+                    Timeline
+
+                </a>
+
+
+                <a href="#stories">
+
+                    Câu chuyện
+
+                </a>
+
+
+            </section>
+
+
+
+            <section>
+
+
+                <h3>
+
+                    Chủ đề
+
+                </h3>
+
+
+                <a href="#">
+
+                    Hội họa
+
+                </a>
+
+
+                <a href="#">
+
+                    Kiến trúc
+
+                </a>
+
+
+                <a href="#">
+
+                    Điêu khắc
+
+                </a>
+
+
+                <a href="#">
+
+                    Nghệ thuật dân gian
+
+                </a>
+
+
+            </section>
+
+
+
+            <section>
+
+
+                <h3>
+
+                    Kết nối
+
+                </h3>
+
+
+                <a href="#">
+
+                    Facebook
+
+                </a>
+
+
+                <a href="#">
+
+                    Instagram
+
+                </a>
+
+
+                <a href="#">
+
+                    YouTube
+
+                </a>
+
+
+                <a href="#">
+
+                    Email
+
+                </a>
+
+
+            </section>
+
+
+        </nav>
+
+
+
+        <section class="footer-bottom">
+
+
+            <p>
+
+                2026 Nét Việt.
+                Lịch sử trong từng nét vẽ.
+
+            </p>
+
+
+            <p>
+
+                Được tạo nên với tình yêu
+                dành cho văn hóa Việt Nam.
+
+            </p>
+
+
+        </section>
+
+
+    </footer>
+
+
+</main>
+
+
+<script src="./stylejavascript.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,1557 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Nét Việt — Lịch sử trong từng nét vẽ
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="./stylecss.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<header class="top-header">
+
+    <section class="logo-area">
+
+        <span class="logo-symbol">
+            ♨
+        </span>
+
+        <section>
+
+            <h1>
+                Nét Việt
+            </h1>
+
+            <p>
+                Lịch sử trong từng nét vẽ
+            </p>
+
+        </section>
+
+    </section>
+
+
+    <nav class="navigation">
+
+        <a
+            href="./index.html"
+            class="active"
+        >
+            Trang chủ
+        </a>
+
+        <a href="./khampha.html">
+            Khám phá
+        </a>
+
+        <a href="./tacpham.html">
+            Tác phẩm
+        </a>
+
+        <a href="./nhanvat.html">
+            Nhân vật
+        </a>
+
+        <a href="./cauchuyen.html">
+            Câu chuyện
+        </a>
+
+        <a href="./vechungtoi.html">
+            Về chúng tôi
+        </a>
+
+    </nav>
+
+
+    <section class="header-actions">
+
+        <input
+            type="search"
+            id="searchInput"
+            placeholder="Tìm kiếm tác phẩm, nhân vật, thời kỳ..."
+        >
+
+        <button
+            class="icon-button"
+            id="themeButton"
+        >
+            ☼
+        </button>
+
+        <button class="icon-button">
+            ♙
+        </button>
+
+    </section>
+
+</header>
+
+<main>
+
+    <section
+        class="hero"
+        id="home"
+    >
+
+        <img
+            class="hero-banner"
+            src="./images/banner.png"
+            alt="Việt Nam qua nghệ thuật"
+        >
+
+
+        <section class="hero-overlay"></section>
+
+
+        <section class="hero-content">
+
+            <p class="small-title">
+                VIỆT NAM QUA NGHỆ THUẬT
+            </p>
+
+
+            <h2>
+
+                Nhìn Lịch Sử<br>
+
+                Qua Nghệ Thuật
+
+            </h2>
+
+
+            <p class="hero-description">
+
+                Khám phá hành trình ngàn năm văn hiến Việt Nam
+                qua những kiệt tác nghệ thuật đặc sắc.
+
+            </p>
+
+
+            <button
+                class="primary-button"
+                onclick="scrollToExplore()"
+            >
+
+                Khám phá ngay
+
+                <span>
+                    →
+                </span>
+
+            </button>
+
+        </section>
+
+
+
+        <section class="hero-quote">
+
+            <p>
+
+                “Mỗi tác phẩm nghệ thuật<br>
+
+                là một trang sử,<br>
+
+                mỗi nét vẽ là một lời kể<br>
+
+                về dân tộc.”
+
+            </p>
+
+        </section>
+
+
+
+        <section class="hero-counter">
+
+            <button
+                onclick="previousHero()"
+            >
+                ←
+            </button>
+
+
+            <span id="heroNumber">
+                01
+            </span>
+
+
+            <small>
+                / 05
+            </small>
+
+
+            <button
+                onclick="nextHero()"
+            >
+                →
+            </button>
+
+        </section>
+
+    </section>
+
+
+    <section
+        class="topic-section"
+        id="explore"
+    >
+
+
+        <article class="topic-intro">
+
+            <p class="section-label">
+                KHÁM PHÁ
+            </p>
+
+
+            <h2>
+
+                Khám phá<br>
+
+                theo chủ đề
+
+            </h2>
+
+
+            <p>
+
+                Mỗi chủ đề là một góc nhìn khác nhau
+                về lịch sử và nghệ thuật Việt Nam.
+
+            </p>
+
+
+            <button class="outline-button">
+
+                Xem tất cả →
+
+            </button>
+
+        </article>
+
+
+
+        <article class="topic-card painting">
+
+            <img
+                class="topic-image"
+                src="./images/tranhnhangian.jpg"
+                alt="Hội họa Việt Nam"
+            >
+
+
+            <section class="topic-info">
+
+                <span>
+                    ♧
+                </span>
+
+
+                <h3>
+                    Hội họa
+                </h3>
+
+
+                <p>
+
+                    Tranh dân gian, tranh lụa,
+                    tranh sơn dầu...
+
+                </p>
+
+            </section>
+
+        </article>
+
+
+
+        <article class="topic-card sculpture">
+
+            <img
+                class="topic-image"
+                src="./images/dieukhac.jpg"
+                alt="Điêu khắc Việt Nam"
+            >
+
+
+            <section class="topic-info">
+
+                <span>
+                    ♜
+                </span>
+
+
+                <h3>
+                    Điêu khắc
+                </h3>
+
+
+                <p>
+
+                    Tượng, phù điêu,
+                    đồ đá...
+
+                </p>
+
+            </section>
+
+        </article>
+
+
+
+        <article class="topic-card architecture">
+
+            <img
+                class="topic-image"
+                src="./images/chua.jpg"
+                alt="Kiến trúc Việt Nam"
+            >
+
+
+            <section class="topic-info">
+
+                <span>
+                    ♖
+                </span>
+
+
+                <h3>
+                    Kiến trúc
+                </h3>
+
+
+                <p>
+
+                    Đình, chùa, cung điện,
+                    nhà cổ...
+
+                </p>
+
+            </section>
+
+        </article>
+
+
+
+        <article class="topic-card folk">
+
+            <img
+                class="topic-image"
+                src="./images/catru.jpg"
+                alt="Nghệ thuật dân gian"
+            >
+
+
+            <section class="topic-info">
+
+                <span>
+                    ♬
+                </span>
+
+
+                <h3>
+                    Nghệ thuật dân gian
+                </h3>
+
+
+                <p>
+
+                    Tranh Đông Hồ, Hàng Trống,
+                    ca trù, chèo...
+
+                </p>
+
+            </section>
+
+        </article>
+
+
+
+        <article class="topic-card costume">
+
+            <img
+                class="topic-image"
+                src="./images/trangphuc.jpg"
+                alt="Trang phục Việt Nam"
+            >
+
+
+            <section class="topic-info">
+
+                <span>
+                    ♙
+                </span>
+
+
+                <h3>
+                    Trang phục
+                </h3>
+
+
+                <p>
+
+                    Áo dài, áo tứ thân,
+                    trang phục cung đình...
+
+                </p>
+
+            </section>
+
+        </article>
+
+
+
+        <article class="topic-card pottery">
+
+            <img
+                class="topic-image"
+                src="./images/gom.jpg"
+                alt="Gốm Việt Nam"
+            >
+
+
+            <section class="topic-info">
+
+                <span>
+                    ♢
+                </span>
+
+
+                <h3>
+                    Gốm
+                </h3>
+
+
+                <p>
+
+                    Gốm Chu Đậu, Bát Tràng,
+                    gốm thời Lý...
+
+                </p>
+
+            </section>
+
+        </article>
+
+    </section>
+
+
+
+    <section class="main-grid">
+
+
+        <article class="timeline-box">
+
+
+            <section class="box-heading">
+
+                <section>
+
+                    <p class="section-label">
+                        LỊCH SỬ
+                    </p>
+
+
+                    <h2>
+                        Dòng thời gian
+                    </h2>
+
+
+                    <p>
+
+                        Theo dấu hành trình lịch sử
+                        qua từng giai đoạn
+
+                    </p>
+
+                </section>
+
+            </section>
+
+
+
+            <ol class="timeline">
+
+
+                <li class="timeline-item active">
+
+                    <span class="timeline-dot"></span>
+
+
+                    <section>
+
+                        <h3>
+                            Thời kỳ Văn Lang - Âu Lạc
+                        </h3>
+
+
+                        <p>
+                            (2879 TCN - 179 TCN)
+                        </p>
+
+                    </section>
+
+                </li>
+
+
+
+                <li class="timeline-item">
+
+                    <span class="timeline-dot"></span>
+
+
+                    <section>
+
+                        <h3>
+                            Thời kỳ Bắc thuộc
+                        </h3>
+
+
+                        <p>
+                            (179 TCN - 938)
+                        </p>
+
+                    </section>
+
+                </li>
+
+
+
+                <li class="timeline-item">
+
+                    <span class="timeline-dot"></span>
+
+
+                    <section>
+
+                        <h3>
+                            Thời kỳ Đại Việt
+                        </h3>
+
+
+                        <p>
+                            (938 - 1400)
+                        </p>
+
+                    </section>
+
+                </li>
+
+
+
+                <li class="timeline-item">
+
+                    <span class="timeline-dot"></span>
+
+
+                    <section>
+
+                        <h3>
+                            Thời kỳ Lê - Nguyễn
+                        </h3>
+
+
+                        <p>
+                            (1400 - 1945)
+                        </p>
+
+                    </section>
+
+                </li>
+
+
+
+                <li class="timeline-item">
+
+                    <span class="timeline-dot"></span>
+
+
+                    <section>
+
+                        <h3>
+                            Thời kỳ hiện đại
+                        </h3>
+
+
+                        <p>
+                            (1945 - nay)
+                        </p>
+
+                    </section>
+
+                </li>
+
+
+            </ol>
+
+
+
+            <button class="dark-button">
+
+                Khám phá toàn bộ timeline →
+
+            </button>
+
+
+
+            <section class="timeline-video">
+
+
+                <p class="video-label">
+
+                    VIDEO KHÁM PHÁ LỊCH SỬ VIỆT NAM
+
+                </p>
+
+
+                <a
+                    href="https://youtu.be/MjeFdeEBZBo?si=tAcFamwuwn3sKrML"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="video-card"
+                >
+
+
+                    <img
+                        src="https://img.youtube.com/vi/MjeFdeEBZBo/hqdefault.jpg"
+                        alt="Video khám phá lịch sử Việt Nam"
+                    >
+
+
+                    <span class="video-overlay">
+                        ▶
+                    </span>
+
+
+                    <section class="video-info">
+
+                        <h3>
+
+                            Khám phá lịch sử
+                            và văn hóa Việt Nam
+
+                        </h3>
+
+
+                        <p>
+
+                            Xem video để tìm hiểu thêm
+                            về lịch sử Việt Nam
+
+                        </p>
+
+                    </section>
+
+
+                </a>
+
+            </section>
+
+
+        </article>
+
+
+
+        <article
+            class="artwork-box"
+            id="artworks"
+        >
+
+
+            <section class="box-title-row">
+
+
+                <section>
+
+                    <p class="section-label">
+                        BỘ SƯU TẬP
+                    </p>
+
+
+                    <h2>
+                        Tác phẩm nổi bật
+                    </h2>
+
+                </section>
+
+
+                <button class="text-button">
+
+                    Xem tất cả →
+
+                </button>
+
+            </section>
+
+
+
+            <section class="artwork-gallery">
+
+
+                <figure class="featured-artwork">
+
+
+                    <section class="art-image image-one">
+
+                        <img
+                            src="./images/ruocvua.png"
+                            alt="Lễ rước vua"
+                        >
+
+                    </section>
+
+
+
+                    <figcaption>
+
+
+                        <span class="tag">
+
+                            HỘI HỌA
+
+                        </span>
+
+
+                        <h3>
+                            Lễ rước vua
+                        </h3>
+
+
+                        <p class="art-meta">
+
+                            Không rõ tác giả |
+                            Thế kỷ XVIII |
+                            Tranh lụa
+
+                        </p>
+
+
+                        <p>
+
+                            Bức tranh miêu tả lễ rước vua trong
+                            cung đình thời Lê, thể hiện sự trang nghiêm
+                            và tinh tế trong nghệ thuật hội họa truyền thống.
+
+                        </p>
+
+
+                        <button class="dark-button">
+
+                            Xem chi tiết →
+
+                        </button>
+
+
+                    </figcaption>
+
+
+                </figure>
+
+
+
+                <section class="small-artworks">
+
+
+                    <figure>
+
+
+                        <section class="art-small small-one">
+
+                            <img
+                                src="./images/cungdinh.jpg"
+                                alt="Cung đình xưa"
+                            >
+
+                        </section>
+
+
+                        <figcaption>
+
+                            <h3>
+                                Cung đình xưa
+                            </h3>
+
+
+                            <p>
+
+                                Kiến trúc · Thế kỷ XVIII
+
+                            </p>
+
+                        </figcaption>
+
+                    </figure>
+
+
+
+                    <figure>
+
+
+                        <section class="art-small small-two">
+
+                            <img
+                                src="./images/tuongda.jpg"
+                                alt="Tượng đá cổ"
+                            >
+
+                        </section>
+
+
+                        <figcaption>
+
+                            <h3>
+                                Tượng đá cổ
+                            </h3>
+
+
+                            <p>
+
+                                Điêu khắc · Thế kỷ XII
+
+                            </p>
+
+                        </figcaption>
+
+                    </figure>
+
+
+
+                    <figure>
+
+
+                        <section class="art-small small-three">
+
+                            <img
+                                src="./images/conglang.jpg"
+                                alt="Cổng làng Việt"
+                            >
+
+                        </section>
+
+
+                        <figcaption>
+
+                            <h3>
+                                Cổng làng Việt
+                            </h3>
+
+
+                            <p>
+
+                                Kiến trúc · Thế kỷ XIX
+
+                            </p>
+
+                        </figcaption>
+
+                    </figure>
+
+
+
+                    <figure>
+
+
+                        <section class="art-small small-four">
+
+                            <img
+                                src="./images/quangcanh.jpg"
+                                alt="Phong cảnh Đại Việt"
+                            >
+
+                        </section>
+
+
+                        <figcaption>
+
+                            <h3>
+                                Phong cảnh Đại Việt
+                            </h3>
+
+
+                            <p>
+
+                                Hội họa · Thế kỷ XVII
+
+                            </p>
+
+                        </figcaption>
+
+                    </figure>
+
+
+                </section>
+
+            </section>
+
+        </article>
+
+
+
+ 
+
+<article
+    class="figure-box"
+    id="figures"
+>
+
+    <section class="box-title-row">
+
+        <section>
+
+            <p class="section-label">
+                NHÂN VẬT
+            </p>
+
+            <h2>
+                Nhân vật tiêu biểu
+            </h2>
+
+        </section>
+
+
+        <button class="text-button">
+
+            Xem tất cả →
+
+        </button>
+
+    </section>
+
+
+
+<article
+    class="figure-box"
+    id="figures"
+>
+
+    <section class="box-title-row">
+
+        <section>
+
+            <p class="section-label">
+                NHÂN VẬT
+            </p>
+
+            <h2>
+                Nhân vật tiêu biểu
+            </h2>
+
+        </section>
+
+        <button class="text-button">
+            Xem tất cả →
+        </button>
+
+    </section>
+
+
+
+    <section
+        class="person person-1"
+        data-person="0"
+    >
+
+        <section class="person-image">
+
+            <img
+                src="./images/nguyentrai.jpg"
+                alt="Nguyễn Trãi"
+            >
+
+        </section>
+
+        <section class="person-content">
+
+            <p class="person-period">
+                1380 — 1442
+            </p>
+
+            <h3>
+                Nguyễn Trãi
+            </h3>
+
+            <p class="person-description">
+                Danh nhân văn hóa thế giới,
+                nhà tư tưởng lớn và một trong
+                những nhân vật có ảnh hưởng
+                sâu sắc trong lịch sử Việt Nam.
+            </p>
+
+            <button class="outline-button">
+                Tìm hiểu thêm
+            </button>
+
+        </section>
+
+    </section>
+
+
+
+    <section
+        class="person person-2"
+        data-person="1"
+        style="display: none;"
+    >
+
+        <section class="person-image">
+
+            <img
+                src="./images/leloi.png"
+                alt="Lê Lợi"
+            >
+
+        </section>
+
+        <section class="person-content">
+
+            <p class="person-period">
+                1385 — 1433
+            </p>
+
+            <h3>
+                Lê Lợi
+            </h3>
+
+            <p class="person-description">
+                Lãnh tụ cuộc khởi nghĩa Lam Sơn,
+                người lãnh đạo nghĩa quân giành lại
+                độc lập cho Đại Việt và sáng lập
+                triều đại nhà Lê sơ.
+            </p>
+
+            <button class="outline-button">
+                Tìm hiểu thêm
+            </button>
+
+        </section>
+
+    </section>
+
+
+  
+
+    <section
+        class="person person-3"
+        data-person="2"
+        style="display: none;"
+    >
+
+        <section class="person-image">
+
+            <img
+                src="./images/nguyendu.png"
+                alt="Nguyễn Du"
+            >
+
+        </section>
+
+        <section class="person-content">
+
+            <p class="person-period">
+                1766 — 1820
+            </p>
+
+            <h3>
+                Nguyễn Du
+            </h3>
+
+            <p class="person-description">
+                Đại thi hào dân tộc, danh nhân văn hóa
+                thế giới và là một trong những tên tuổi
+                lớn nhất của nền văn học Việt Nam.
+            </p>
+
+            <button class="outline-button">
+                Tìm hiểu thêm
+            </button>
+
+        </section>
+
+    </section>
+
+
+  
+
+    <blockquote>
+
+        <span class="person-quote">
+            “Việc nhân nghĩa cốt ở yên dân,
+            quân điếu phạt trước lo trừ bạo”
+        </span>
+
+        <cite class="person-author">
+            — Nguyễn Trãi
+        </cite>
+
+    </blockquote>
+
+
+   
+
+    <section class="person-audio">
+
+        <p class="audio-label">
+            NGHE CÂU CHUYỆN
+        </p>
+
+        <h3 id="audioTitle">
+            Nguyễn Trãi — Danh nhân văn hóa Việt Nam
+        </h3>
+
+        <p class="audio-description">
+            Nghe phần thuyết minh ngắn về nhân vật
+            và những dấu ấn nổi bật trong lịch sử.
+        </p>
+
+        <audio
+            id="personAudio"
+            controls
+            preload="metadata"
+        >
+
+            <source
+                src="./audio/nguyentrai.mp3"
+                type="audio/mpeg"
+            >
+
+            Trình duyệt của bạn không hỗ trợ audio.
+
+        </audio>
+
+    </section>
+
+
+
+    <section class="person-controls">
+
+        <button
+            type="button"
+            onclick="changePerson(-1)"
+            aria-label="Nhân vật trước"
+        >
+            ←
+        </button>
+
+        <button
+            type="button"
+            onclick="changePerson(1)"
+            aria-label="Nhân vật tiếp theo"
+        >
+            →
+        </button>
+
+    </section>
+
+</article>
+
+
+</article>
+
+
+        <article class="virtual-box">
+
+
+            <section class="virtual-image">
+
+
+                <img
+                    src="./images/baotang.jpg"
+                    alt="Bảo tàng nghệ thuật Việt Nam"
+                >
+
+
+            </section>
+
+
+
+            <section class="virtual-content">
+
+
+                <p class="section-label">
+
+                    TRẢI NGHIỆM ẢO
+
+                </p>
+
+
+                <h2>
+
+                    Tham quan bảo tàng<br>
+
+                    trực tuyến
+
+                </h2>
+
+
+                <button class="primary-button">
+
+                    Bắt đầu tham quan →
+
+                </button>
+
+
+            </section>
+
+
+        </article>
+
+
+
+
+        <article class="news-box">
+
+
+            <section class="box-title-row">
+
+
+                <h2>
+
+                    Sự kiện & Tin tức
+
+                </h2>
+
+
+                <button class="text-button">
+
+                    Xem tất cả →
+
+                </button>
+
+
+            </section>
+
+
+
+            <article class="news-item">
+
+
+                <section class="news-thumb">
+
+
+                    <img
+                        src="./images/trienlamtranh.jpg"
+                        alt="Triển lãm tranh dân gian"
+                    >
+
+
+                </section>
+
+
+                <section>
+
+
+                    <p>
+
+                        12/05/2025
+
+                    </p>
+
+
+                    <h3>
+
+                        Triển lãm tranh dân gian Việt Nam
+
+                    </h3>
+
+
+                </section>
+
+
+            </article>
+
+
+
+            <article class="news-item">
+
+
+                <section class="news-thumb">
+
+
+                    <img
+                        src="./images/trienlamnghethuatls.jpg"
+                        alt="Hội thảo nghệ thuật"
+                    >
+
+
+                </section>
+
+
+                <section>
+
+
+                    <p>
+
+                        28/04/2025
+
+                    </p>
+
+
+                    <h3>
+
+                        Hội thảo
+                        “Nghệ thuật và lịch sử Việt Nam”
+
+                    </h3>
+
+
+                </section>
+
+
+            </article>
+
+
+
+            <article class="news-item">
+
+
+                <section class="news-thumb">
+
+
+                    <img
+                        src="./images/triemlamgomsu.jpg"
+                        alt="Bộ sưu tập gốm cổ"
+                    >
+
+
+                </section>
+
+
+                <section>
+
+
+                    <p>
+
+                        15/04/2025
+
+                    </p>
+
+
+                    <h3>
+
+                        Ra mắt bộ sưu tập
+                        gốm cổ thời Lý
+
+                    </h3>
+
+
+                </section>
+
+
+            </article>
+
+
+        </article>
+
+
+    </section>
+
+
+
+
+    <footer>
+
+
+        <section class="footer-brand">
+
+
+            <h2>
+
+                Nét Việt
+
+            </h2>
+
+
+            <p>
+
+                Lịch sử trong từng nét vẽ
+
+            </p>
+
+
+        </section>
+
+
+
+        <nav class="footer-links">
+
+
+            <section>
+
+
+                <h3>
+
+                    Khám phá
+
+                </h3>
+
+
+                <a href="#artworks">
+
+                    Tác phẩm
+
+                </a>
+
+
+                <a href="#figures">
+
+                    Nhân vật
+
+                </a>
+
+
+                <a href="#explore">
+
+                    Timeline
+
+                </a>
+
+
+                <a href="#stories">
+
+                    Câu chuyện
+
+                </a>
+
+
+            </section>
+
+
+
+            <section>
+
+
+                <h3>
+
+                    Chủ đề
+
+                </h3>
+
+
+                <a href="#">
+
+                    Hội họa
+
+                </a>
+
+
+                <a href="#">
+
+                    Kiến trúc
+
+                </a>
+
+
+                <a href="#">
+
+                    Điêu khắc
+
+                </a>
+
+
+                <a href="#">
+
+                    Nghệ thuật dân gian
+
+                </a>
+
+
+            </section>
+
+
+
+            <section>
+
+
+                <h3>
+
+                    Kết nối
+
+                </h3>
+
+
+                <a href="#">
+
+                    Facebook
+
+                </a>
+
+
+                <a href="#">
+
+                    Instagram
+
+                </a>
+
+
+                <a href="#">
+
+                    YouTube
+
+                </a>
+
+
+                <a href="#">
+
+                    Email
+
+                </a>
+
+
+            </section>
+
+
+        </nav>
+
+
+
+        <section class="footer-bottom">
+
+
+            <p>
+
+                2026 Nét Việt.
+                Lịch sử trong từng nét vẽ.
+
+            </p>
+
+
+            <p>
+
+                Được tạo nên với tình yêu
+                dành cho văn hóa Việt Nam.
+
+            </p>
+
+
+        </section>
+
+
+    </footer>
+
+
+</main>
+
+
+<script src="./stylejavascript.js"></script>
+
+</body>
+
+</html>

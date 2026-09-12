@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Nét Việt — Về chúng tôi
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="./stylecss.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<header class="top-header">
+
+    <section class="logo-area">
+
+        <span class="logo-symbol">
+            ♨
+        </span>
+
+        <section>
+
+            <h1>
+                Nét Việt
+            </h1>
+
+            <p>
+                Lịch sử trong từng nét vẽ
+            </p>
+
+        </section>
+
+    </section>
+
+
+    <nav class="navigation">
+
+        <a
+            href="./index.html"
+        >
+            Trang chủ
+        </a>
+
+        <a href="./khampha.html">
+            Khám phá
+        </a>
+
+        <a href="./tacpham.html">
+            Tác phẩm
+        </a>
+
+        <a href="./nhanvat.html">
+            Nhân vật
+        </a>
+
+        <a href="./cauchuyen.html">
+            Câu chuyện
+        </a>
+
+        <a href="./vechungtoi.html">
+            Về chúng tôi
+        </a>
+
+    </nav>
+
+
+    <section class="header-actions">
+
+        <input
+            type="search"
+            id="searchInput"
+            placeholder="Tìm kiếm tác phẩm, nhân vật, thời kỳ..."
+        >
+
+        <button
+            class="icon-button"
+            id="themeButton"
+        >
+            ☼
+        </button>
+
+        <button class="icon-button">
+            ♙
+        </button>
+
+    </section>
+
+</header>
+
+<main>
+
+    <section
+        class="hero"
+        id="home"
+    >
+
+        <img
+            class="hero-banner"
+            src="./images/banner3.png"
+            alt="Việt Nam qua nghệ thuật"
+        >
+
+
+        <section class="hero-overlay"></section>
+
+
+        <section class="hero-content">
+
+            <p class="small-title">
+                VIỆT NAM QUA NGHỆ THUẬT
+            </p>
+
+
+            <h2>
+
+                Nhìn Lịch Sử<br>
+
+                Qua Nghệ Thuật
+
+            </h2>
+
+
+            <p class="hero-description">
+
+                Khám phá hành trình ngàn năm văn hiến Việt Nam
+                qua những kiệt tác nghệ thuật đặc sắc.
+
+            </p>
+
+
+            <button
+                class="primary-button"
+                onclick="scrollToExplore()"
+            >
+
+                Khám phá ngay
+
+                <span>
+                    →
+                </span>
+
+            </button>
+
+        </section>
+
+
+
+        <section class="hero-quote">
+
+            <p>
+
+                “Mỗi tác phẩm nghệ thuật<br>
+
+                là một trang sử,<br>
+
+                mỗi nét vẽ là một lời kể<br>
+
+                về dân tộc.”
+
+            </p>
+
+        </section>
+
+
+
+        <section class="hero-counter">
+
+            <button
+                onclick="previousHero()"
+            >
+                ←
+            </button>
+
+
+            <span id="heroNumber">
+                01
+            </span>
+
+
+            <small>
+                / 05
+            </small>
+
+
+            <button
+                onclick="nextHero()"
+            >
+                →
+            </button>
+
+        </section>
+
+    </section>
+    <section class="about-intro">
+
+        <section class="about-intro-image">
+
+            <img
+                src="./images/trungnambac.png"
+                alt="Vườn xuân Trung Nam Bắc"
+            >
+
+        </section>
+
+        <section class="about-intro-content">
+
+            <p class="about-label">
+                GIỚI THIỆU
+            </p>
+
+            <h2>
+                Câu chuyện<br>
+                của Nét Việt
+            </h2>
+
+            <p>
+                Nét Việt là một không gian trực tuyến dành cho
+                những người yêu thích lịch sử, nghệ thuật và
+                văn hóa Việt Nam.
+            </p>
+
+            <p>
+                Chúng tôi mong muốn đưa những câu chuyện lịch sử
+                đến gần hơn với mọi người thông qua hội họa,
+                kiến trúc, điêu khắc và nghệ thuật dân gian.
+            </p>
+
+            <p>
+                Mỗi tác phẩm không chỉ mang giá trị nghệ thuật
+                mà còn lưu giữ những dấu ấn của một thời kỳ,
+                một con người và một phần ký ức của dân tộc.
+            </p>
+
+        </section>
+
+    </section>
+
+
+    <section class="about-goals">
+
+        <section class="about-section-heading">
+
+            <p class="about-label">
+                CHÚNG TÔI LÀM GÌ
+            </p>
+
+            <h2>
+                Mục tiêu của Nét Việt
+            </h2>
+
+            <p>
+                Kết nối lịch sử với nghệ thuật bằng một cách
+                gần gũi, trực quan và dễ tiếp cận.
+            </p>
+
+        </section>
+
+
+        <section class="goal-list">
+
+            <article class="goal-card">
+
+                <span class="goal-number">
+                    01
+                </span>
+
+                <h3>
+                    Lưu giữ giá trị văn hóa
+                </h3>
+
+                <p>
+                    Giới thiệu những tác phẩm, nhân vật và
+                    câu chuyện có giá trị trong lịch sử
+                    nghệ thuật Việt Nam.
+                </p>
+
+            </article>
+
+
+            <article class="goal-card">
+
+                <span class="goal-number">
+                    02
+                </span>
+
+                <h3>
+                    Kể chuyện bằng nghệ thuật
+                </h3>
+
+                <p>
+                    Giúp người xem hiểu lịch sử thông qua
+                    hình ảnh, tác phẩm nghệ thuật và những
+                    câu chuyện giàu cảm xúc.
+                </p>
+
+            </article>
+
+
+            <article class="goal-card">
+
+                <span class="goal-number">
+                    03
+                </span>
+
+                <h3>
+                    Lan tỏa tình yêu Việt Nam
+                </h3>
+
+                <p>
+                    Góp phần khơi dậy sự quan tâm và tình yêu
+                    đối với lịch sử, văn hóa và nghệ thuật
+                    của dân tộc.
+                </p>
+
+            </article>
+
+        </section>
+
+    </section>
+
+
+    <section class="about-story">
+
+        <section class="about-story-content">
+
+            <p class="about-label">
+                CÂU CHUYỆN
+            </p>
+
+            <h2>
+                Khi lịch sử<br>
+                được kể bằng hình ảnh
+            </h2>
+
+            <p>
+                Lịch sử không chỉ nằm trong những trang sách.
+                Lịch sử còn hiện diện trong những công trình,
+                bức tranh, pho tượng, trang phục và những
+                nét văn hóa được lưu truyền qua nhiều thế hệ.
+            </p>
+
+            <p>
+                Nét Việt được xây dựng với mong muốn tạo ra
+                một nơi để mọi người có thể khám phá những
+                giá trị ấy theo một cách trực quan và sinh động.
+            </p>
+
+        </section>
+
+
+        <section class="about-story-image">
+
+            <img
+                src="./images/oanquan.png"
+                alt="Chơi ô ăn quan"
+            >
+
+        </section>
+
+    </section>
+
+
+    <section class="about-quote">
+
+        <p class="about-label">
+            THÔNG ĐIỆP
+        </p>
+
+        <blockquote>
+            “Mỗi tác phẩm nghệ thuật là một trang sử,
+            mỗi nét vẽ là một lời kể về dân tộc.”
+        </blockquote>
+
+        <p>
+            Nét Việt — Lịch sử trong từng nét vẽ
+        </p>
+
+    </section>
+
+
+    <section class="about-explore">
+
+        <section class="about-section-heading">
+
+            <p class="about-label">
+                KHÁM PHÁ
+            </p>
+
+            <h2>
+                Tiếp tục hành trình
+            </h2>
+
+            <p>
+                Khám phá những câu chuyện và tác phẩm
+                đặc sắc của văn hóa Việt Nam.
+            </p>
+
+        </section>
+
+
+        <section class="explore-list">
+
+            <a
+                href="./tacpham.html"
+                class="explore-card"
+            >
+
+                <img
+                    src="./images/tacphamtieubieu.png"
+                    alt="Tác phẩm nghệ thuật"
+                >
+
+                <section>
+
+                    <h3>
+                        Tác phẩm
+                    </h3>
+
+                    <p>
+                        Khám phá những tác phẩm nghệ thuật
+                        tiêu biểu của Việt Nam.
+                    </p>
+
+                    <span>
+                        Khám phá →
+                    </span>
+
+                </section>
+
+            </a>
+
+
+            <a
+                href="./nhanvat.html"
+                class="explore-card"
+            >
+
+                <img
+                    src="./images/nhanvattieubieu.png"
+                    alt="Nhân vật"
+                >
+
+                <section>
+
+                    <h3>
+                        Nhân vật
+                    </h3>
+
+                    <p>
+                        Tìm hiểu về những con người
+                        có dấu ấn trong lịch sử Việt Nam.
+                    </p>
+
+                    <span>
+                        Khám phá →
+                    </span>
+
+                </section>
+
+            </a>
+
+
+            <a
+                href="./cauchuyen.html"
+                class="explore-card"
+            >
+
+                <img
+                    src="./images/cauchuyennghethuat.png"
+                    alt="Câu chuyện"
+                >
+
+                <section>
+
+                    <h3>
+                        Câu chuyện
+                    </h3>
+
+                    <p>
+                        Lắng nghe những câu chuyện phía sau
+                        lịch sử và nghệ thuật.
+                    </p>
+
+                    <span>
+                        Khám phá →
+                    </span>
+
+                </section>
+
+            </a>
+
+        </section>
+
+    </section>
+
+ <footer>
+
+
+        <section class="footer-brand">
+
+
+            <h2>
+
+                Nét Việt
+
+            </h2>
+
+
+            <p>
+
+                Lịch sử trong từng nét vẽ
+
+            </p>
+
+
+        </section>
+
+
+
+        <nav class="footer-links">
+
+
+            <section>
+
+
+                <h3>
+
+                    Khám phá
+
+                </h3>
+
+
+                <a href="#artworks">
+
+                    Tác phẩm
+
+                </a>
+
+
+                <a href="#figures">
+
+                    Nhân vật
+
+                </a>
+
+
+                <a href="#explore">
+
+                    Timeline
+
+                </a>
+
+
+                <a href="#stories">
+
+                    Câu chuyện
+
+                </a>
+
+
+            </section>
+
+
+
+            <section>
+
+
+                <h3>
+
+                    Chủ đề
+
+                </h3>
+
+
+                <a href="#">
+
+                    Hội họa
+
+                </a>
+
+
+                <a href="#">
+
+                    Kiến trúc
+
+                </a>
+
+
+                <a href="#">
+
+                    Điêu khắc
+
+                </a>
+
+
+                <a href="#">
+
+                    Nghệ thuật dân gian
+
+                </a>
+
+
+            </section>
+
+
+
+            <section>
+
+
+                <h3>
+
+                    Kết nối
+
+                </h3>
+
+
+                <a href="#">
+
+                    Facebook
+
+                </a>
+
+
+                <a href="#">
+
+                    Instagram
+
+                </a>
+
+
+                <a href="#">
+
+                    YouTube
+
+                </a>
+
+
+                <a href="#">
+
+                    Email
+
+                </a>
+
+
+            </section>
+
+
+        </nav>
+
+
+
+        <section class="footer-bottom">
+
+
+            <p>
+
+                2026 Nét Việt.
+                Lịch sử trong từng nét vẽ.
+
+            </p>
+
+
+            <p>
+
+                Được tạo nên với tình yêu
+                dành cho văn hóa Việt Nam.
+
+            </p>
+
+
+        </section>
+
+
+    </footer>
+
+
+</main>
+
+
+<script src="./stylejavascript.js"></script>
+
+</body>
+
+</html>

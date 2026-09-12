@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Nét Việt — Khám phá
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="./stylecss.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<header class="top-header">
+
+    <section class="logo-area">
+
+        <span class="logo-symbol">
+            ♨
+        </span>
+
+        <section>
+
+            <h1>
+                Nét Việt
+            </h1>
+
+            <p>
+                Lịch sử trong từng nét vẽ
+            </p>
+
+        </section>
+
+    </section>
+
+
+    <nav class="navigation">
+
+        <a
+            href="./index.html"
+        >
+            Trang chủ
+        </a>
+
+        <a href="./khampha.html">
+            Khám phá
+        </a>
+
+        <a href="./tacpham.html">
+            Tác phẩm
+        </a>
+
+        <a href="./nhanvat.html">
+            Nhân vật
+        </a>
+
+        <a href="./cauchuyen.html">
+            Câu chuyện
+        </a>
+
+        <a href="./vechungtoi.html">
+            Về chúng tôi
+        </a>
+
+    </nav>
+
+
+    <section class="header-actions">
+
+        <input
+            type="search"
+            id="searchInput"
+            placeholder="Tìm kiếm tác phẩm, nhân vật, thời kỳ..."
+        >
+
+        <button
+            class="icon-button"
+            id="themeButton"
+        >
+            ☼
+        </button>
+
+        <button class="icon-button">
+            ♙
+        </button>
+
+    </section>
+
+</header>
+
+<main>
+
+    <section
+        class="hero"
+        id="home"
+    >
+
+        <img
+            class="hero-banner"
+            src="./images/banner4.png"
+            alt="Việt Nam qua nghệ thuật"
+        >
+
+
+        <section class="hero-overlay"></section>
+
+
+        <section class="hero-content">
+
+            <p class="small-title">
+                VIỆT NAM QUA NGHỆ THUẬT
+            </p>
+
+
+            <h2>
+
+                Nhìn Lịch Sử<br>
+
+                Qua Nghệ Thuật
+
+            </h2>
+
+
+            <p class="hero-description">
+
+                Khám phá hành trình ngàn năm văn hiến Việt Nam
+                qua những kiệt tác nghệ thuật đặc sắc.
+
+            </p>
+
+
+            <button
+                class="primary-button"
+                onclick="scrollToExplore()"
+            >
+
+                Khám phá ngay
+
+                <span>
+                    →
+                </span>
+
+            </button>
+
+        </section>
+
+
+
+        <section class="hero-quote">
+
+            <p>
+
+                “Mỗi tác phẩm nghệ thuật<br>
+
+                là một trang sử,<br>
+
+                mỗi nét vẽ là một lời kể<br>
+
+                về dân tộc.”
+
+            </p>
+
+        </section>
+
+
+
+        <section class="hero-counter">
+
+            <button
+                onclick="previousHero()"
+            >
+                ←
+            </button>
+
+
+            <span id="heroNumber">
+                01
+            </span>
+
+
+            <small>
+                / 05
+            </small>
+
+
+            <button
+                onclick="nextHero()"
+            >
+                →
+            </button>
+
+        </section>
+
+    </section>
+
+  
+    <section class="explore-section" id="explore">
+
+        <section class="section-heading">
+
+            <p class="section-label">
+                KHÁM PHÁ
+            </p>
+
+            <h2>
+                Bạn muốn khám phá điều gì?
+            </h2>
+
+            <p>
+                Lựa chọn một chủ đề để bắt đầu hành trình tìm hiểu
+                lịch sử và văn hóa Việt Nam.
+            </p>
+
+        </section>
+
+
+        <section class="explore-grid">
+
+            <a href="./tacpham.html" class="explore-card">
+
+                <section class="explore-icon">
+                    <img src="./images/logohoihoa.png" alt="Hội họa">
+                </section>
+
+                <section>
+                    <h3>Hội họa</h3>
+
+                    <p>
+                        Khám phá những tác phẩm hội họa
+                        nổi bật của nghệ thuật Việt Nam.
+                    </p>
+                </section>
+
+                <span class="explore-arrow">→</span>
+
+            </a>
+
+
+            <a href="./tacpham.html" class="explore-card">
+
+                <section class="explore-icon">
+                    <img src="./images/logokientruc.png" alt="Kiến trúc">
+                </section>
+
+                <section>
+                    <h3>Kiến trúc</h3>
+
+                    <p>
+                        Tìm hiểu những công trình kiến trúc
+                        mang dấu ấn qua từng thời kỳ.
+                    </p>
+                </section>
+
+                <span class="explore-arrow">→</span>
+
+            </a>
+
+
+            <a href="./tacpham.html" class="explore-card">
+
+                <section class="explore-icon">
+                    <img src="./images/logodieukhac.png" alt="Điêu khắc">
+                </section>
+
+                <section>
+                    <h3>Điêu khắc</h3>
+
+                    <p>
+                        Chiêm ngưỡng những hình tượng và
+                        tác phẩm điêu khắc đặc sắc.
+                    </p>
+                </section>
+
+                <span class="explore-arrow">→</span>
+
+            </a>
+
+
+            <a href="./tacpham.html" class="explore-card">
+
+                <section class="explore-icon">
+                    <img src="./images/logonghethuat.png" alt="Nghệ thuật nhân gian">
+                </section>
+
+                <section>
+                    <h3>Nghệ thuật dân gian</h3>
+
+                    <p>
+                        Khám phá vẻ đẹp mộc mạc trong
+                        đời sống và văn hóa dân gian.
+                    </p>
+                </section>
+
+                <span class="explore-arrow">→</span>
+
+            </a>
+
+
+            <a href="./nhanvat.html" class="explore-card">
+
+                <section class="explore-icon">
+                    <img src="./images/logonhanvat.png" alt="Nhân vật lịch sử">
+                </section>
+
+                <section>
+                    <h3>Nhân vật lịch sử</h3>
+
+                    <p>
+                        Gặp gỡ những con người đã để lại
+                        dấu ấn trong lịch sử dân tộc.
+                    </p>
+                </section>
+
+                <span class="explore-arrow">→</span>
+
+            </a>
+
+
+            <a href="./cauchuyen.html" class="explore-card">
+
+                <section class="explore-icon">
+                    <img src="./images/logocauchuyen.png" alt="Câu chuyện lịch sử">
+                </section>
+
+                <section>
+                    <h3>Câu chuyện lịch sử</h3>
+
+                    <p>
+                        Lắng nghe những câu chuyện phía sau
+                        các sự kiện và tác phẩm nghệ thuật.
+                    </p>
+                </section>
+
+                <span class="explore-arrow">→</span>
+
+            </a>
+
+        </section>
+
+    </section>
+
+
+    <section class="discover-timeline">
+
+        <section class="section-heading">
+
+            <p class="section-label">
+                DÒNG CHẢY LỊCH SỬ
+            </p>
+
+            <h2>
+                Việt Nam qua những thời kỳ
+            </h2>
+
+            <p>
+                Mỗi thời kỳ mang đến một sắc màu nghệ thuật
+                và một câu chuyện riêng.
+            </p>
+
+        </section>
+
+
+        <section class="timeline-line">
+
+            <article class="timeline-period">
+
+                <span>01</span>
+
+                <section>
+                    <h3>Dựng nước</h3>
+
+                    <p>
+                        Những dấu ấn đầu tiên của văn hóa
+                        và nghệ thuật Việt cổ.
+                    </p>
+                </section>
+
+            </article>
+
+
+            <article class="timeline-period">
+
+                <span>02</span>
+
+                <section>
+                    <h3>Thời Đại Việt</h3>
+
+                    <p>
+                        Nghệ thuật phát triển cùng những
+                        triều đại và nền văn hóa rực rỡ.
+                    </p>
+                </section>
+
+            </article>
+
+
+            <article class="timeline-period">
+
+                <span>03</span>
+
+                <section>
+                    <h3>Lê – Nguyễn</h3>
+
+                    <p>
+                        Những thay đổi trong hội họa,
+                        kiến trúc và nghệ thuật cung đình.
+                    </p>
+                </section>
+
+            </article>
+
+
+            <article class="timeline-period">
+
+                <span>04</span>
+
+                <section>
+                    <h3>Cận đại</h3>
+
+                    <p>
+                        Sự giao thoa giữa nghệ thuật truyền thống
+                        và những ảnh hưởng mới.
+                    </p>
+                </section>
+
+            </article>
+
+
+            <article class="timeline-period">
+
+                <span>05</span>
+
+                <section>
+                    <h3>Thế kỷ XX</h3>
+
+                    <p>
+                        Một giai đoạn mới của mỹ thuật Việt Nam
+                        với nhiều tên tuổi nổi bật.
+                    </p>
+                </section>
+
+            </article>
+
+        </section>
+
+    </section>
+
+
+
+    <section class="highlight-section">
+
+        <section class="section-heading">
+
+            <p class="section-label">
+                DẤU ẤN NỔI BẬT
+            </p>
+
+            <h2>
+                Những tác phẩm đáng nhớ
+            </h2>
+
+            <p>
+                Một vài tác phẩm tiêu biểu giúp kể lại
+                những câu chuyện về con người và văn hóa Việt.
+            </p>
+
+        </section>
+
+
+        <section class="highlight-grid">
+
+            <article class="highlight-card">
+
+                <section class="highlight-image">
+
+                    <img
+                        src="./images/trungnambac1.webp"
+                        alt="Vườn xuân Trung Nam Bắc"
+                    >
+
+                </section>
+
+                <section class="highlight-info">
+
+                    <span>
+                        HỘI HỌA
+                    </span>
+
+                    <h3>
+                        Vườn xuân Trung Nam Bắc
+                    </h3>
+
+                    <p>
+                        Nguyễn Gia Trí
+                    </p>
+
+                </section>
+
+            </article>
+
+
+            <article class="highlight-card">
+
+                <section class="highlight-image">
+
+                    <img
+                        src="./images/oanquan1.jpg"
+                        alt="Chơi ô ăn quan"
+                    >
+
+                </section>
+
+                <section class="highlight-info">
+
+                    <span>
+                        NGHỆ THUẬT DÂN GIAN
+                    </span>
+
+                    <h3>
+                        Chơi ô ăn quan
+                    </h3>
+
+                    <p>
+                        Nguyễn Phan Chánh
+                    </p>
+
+                </section>
+
+            </article>
+
+
+            <article class="highlight-card">
+
+                <section class="highlight-image">
+
+                    <img
+                        src="./images/thieunubenhoahue.jpg"
+                        alt="Thiếu nữ bên hoa huệ"
+                    >
+
+                </section>
+
+                <section class="highlight-info">
+
+                    <span>
+                        HỘI HỌA
+                    </span>
+
+                    <h3>
+                        Thiếu nữ bên hoa huệ
+                    </h3>
+
+                    <p>
+                        Tô Ngọc Vân
+                    </p>
+
+                </section>
+
+            </article>
+
+        </section>
+
+        <a href="./tacpham.html" class="explore-more">
+            Xem tất cả tác phẩm
+            <span>→</span>
+        </a>
+
+    </section>
+
+
+  
+    <section class="life-section">
+
+        <section class="life-image">
+
+            <img
+                src="./images/doisong1.png"
+                alt="Đời sống người Việt xưa"
+            >
+
+        </section>
+
+
+        <section class="life-content">
+
+            <p class="section-label">
+                GÓC NHÌN VĂN HÓA
+            </p>
+
+            <h2>
+                Một ngày xưa<br>
+                của người Việt
+            </h2>
+
+            <p>
+                Nghệ thuật không chỉ nằm trong những bức tranh
+                hay công trình. Nó còn hiện diện trong cách con người
+                sinh hoạt, vui chơi, lao động và gìn giữ phong tục.
+            </p>
+
+            <section class="life-list">
+
+                <p>
+                    <span>01</span>
+                    Đời sống
+                </p>
+
+                <p>
+                    <span>02</span>
+                    Nghệ thuật
+                </p>
+
+                <p>
+                    <span>03</span>
+                    Phong tục
+                </p>
+
+            </section>
+
+            <a href="./cauchuyen.html" class="secondary-button">
+                Đọc câu chuyện
+                <span>→</span>
+            </a>
+
+        </section>
+
+    </section>
+
+
+ 
+    <section class="discover-quote">
+
+        <p class="quote-mark">
+            “
+        </p>
+
+        <blockquote>
+            Hiểu nghệ thuật<br>
+            là hiểu thêm một phần<br>
+            tâm hồn Việt Nam.
+        </blockquote>
+
+        <a href="./tacpham.html">
+            Tiếp tục hành trình
+            <span>→</span>
+        </a>
+
+    </section>
+
+</main>
+<footer>
+
+
+        <section class="footer-brand">
+
+
+            <h2>
+
+                Nét Việt
+
+            </h2>
+
+
+            <p>
+
+                Lịch sử trong từng nét vẽ
+
+            </p>
+
+
+        </section>
+
+
+
+        <nav class="footer-links">
+
+
+            <section>
+
+
+                <h3>
+
+                    Khám phá
+
+                </h3>
+
+
+                <a href="#artworks">
+
+                    Tác phẩm
+
+                </a>
+
+
+                <a href="#figures">
+
+                    Nhân vật
+
+                </a>
+
+
+                <a href="#explore">
+
+                    Timeline
+
+                </a>
+
+
+                <a href="#stories">
+
+                    Câu chuyện
+
+                </a>
+
+
+            </section>
+
+
+
+            <section>
+
+
+                <h3>
+
+                    Chủ đề
+
+                </h3>
+
+
+                <a href="#">
+
+                    Hội họa
+
+                </a>
+
+
+                <a href="#">
+
+                    Kiến trúc
+
+                </a>
+
+
+                <a href="#">
+
+                    Điêu khắc
+
+                </a>
+
+
+                <a href="#">
+
+                    Nghệ thuật dân gian
+
+                </a>
+
+
+            </section>
+
+
+
+            <section>
+
+
+                <h3>
+
+                    Kết nối
+
+                </h3>
+
+
+                <a href="#">
+
+                    Facebook
+
+                </a>
+
+
+                <a href="#">
+
+                    Instagram
+
+                </a>
+
+
+                <a href="#">
+
+                    YouTube
+
+                </a>
+
+
+                <a href="#">
+
+                    Email
+
+                </a>
+
+
+            </section>
+
+
+        </nav>
+
+
+
+        <section class="footer-bottom">
+
+
+            <p>
+
+                2026 Nét Việt.
+                Lịch sử trong từng nét vẽ.
+
+            </p>
+
+
+            <p>
+
+                Được tạo nên với tình yêu
+                dành cho văn hóa Việt Nam.
+
+            </p>
+
+
+        </section>
+
+
+    </footer>
+
+
+</main>
+
+
+<script src="./stylejavascript.js"></script>
+
+</body>
+
+</html>

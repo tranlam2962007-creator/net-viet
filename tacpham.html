@@ -1,0 +1,2119 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Nét Việt — Tác phẩm
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="./stylecss.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<header class="top-header">
+
+    <section class="logo-area">
+
+        <span class="logo-symbol">
+            ♨
+        </span>
+
+        <section>
+
+            <h1>
+                Nét Việt
+            </h1>
+
+            <p>
+                Lịch sử trong từng nét vẽ
+            </p>
+
+        </section>
+
+    </section>
+
+
+    <nav class="navigation">
+
+        <a
+            href="./index.html"
+        >
+            Trang chủ
+        </a>
+
+        <a href="./khampha.html ">
+            Khám phá
+        </a>
+
+        <a href="./tacpham.html" >
+            Tác phẩm
+        </a>
+
+        <a href="./nhanvat.html">
+            Nhân vật
+        </a>
+
+        <a href="./cauchuyen.html">
+            Câu chuyện
+        </a>
+
+        <a href="./vechungtoi.html">
+            Về chúng tôi
+        </a>
+
+    </nav>
+
+
+    <section class="header-actions">
+
+        <input
+            type="search"
+            id="searchInput"
+            placeholder="Tìm kiếm tác phẩm, nhân vật, thời kỳ..."
+        >
+
+        <button
+            class="icon-button"
+            id="themeButton"
+        >
+            ☼
+        </button>
+
+        <button class="icon-button">
+            ♙
+        </button>
+
+    </section>
+
+</header>
+
+<main>
+
+    <section
+        class="hero"
+        id="home"
+    >
+
+        <img
+            class="hero-banner"
+            src="./images/banner1.png"
+            alt="Việt Nam qua nghệ thuật"
+        >
+
+
+        <section class="hero-overlay"></section>
+
+
+        <section class="hero-content">
+
+            <p class="small-title">
+                VIỆT NAM QUA NGHỆ THUẬT
+            </p>
+
+
+            <h2>
+
+                Nhìn Lịch Sử<br>
+
+                Qua Nghệ Thuật
+
+            </h2>
+
+
+            <p class="hero-description">
+
+                Khám phá hành trình ngàn năm văn hiến Việt Nam
+                qua những kiệt tác nghệ thuật đặc sắc.
+
+            </p>
+
+
+            <button
+                class="primary-button"
+                onclick="scrollToExplore()"
+            >
+
+                Khám phá ngay
+
+                <span>
+                    →
+                </span>
+
+            </button>
+
+        </section>
+
+
+
+        <section class="hero-quote">
+
+            <p>
+
+                “Mỗi tác phẩm nghệ thuật<br>
+
+                là một trang sử,<br>
+
+                mỗi nét vẽ là một lời kể<br>
+
+                về dân tộc.”
+
+            </p>
+
+        </section>
+
+
+
+        <section class="hero-counter">
+
+            <button
+                onclick="previousHero()"
+            >
+                ←
+            </button>
+
+
+            <span id="heroNumber">
+                01
+            </span>
+
+
+            <small>
+                / 05
+            </small>
+
+
+            <button
+                onclick="nextHero()"
+            >
+                →
+            </button>
+
+        </section>
+
+    </section>
+    <main>
+
+    <section class="discover-page">
+
+        <section class="discover-heading">
+
+            <p class="discover-label">KHÁM PHÁ</p>
+
+            <h2>Kho tàng nghệ thuật Việt Nam</h2>
+
+            <p class="discover-intro">
+                Khám phá những giá trị nghệ thuật Việt Nam qua nhiều thời kỳ
+                lịch sử. Lựa chọn một chủ đề để tìm hiểu các tác phẩm tiêu biểu.
+            </p>
+
+        </section>
+
+
+        <section class="discover-filter" aria-label="Lọc tác phẩm">
+
+            <button
+                class="discover-filter-btn active"
+                data-category="all">
+                Tất cả
+            </button>
+
+            <button
+                class="discover-filter-btn"
+                data-category="painting">
+                Hội họa
+            </button>
+
+            <button
+                class="discover-filter-btn"
+                data-category="sculpture">
+                Điêu khắc
+            </button>
+
+            <button
+                class="discover-filter-btn"
+                data-category="architecture">
+                Kiến trúc
+            </button>
+
+            <button
+                class="discover-filter-btn"
+                data-category="folk">
+                Nghệ thuật nhân gian
+            </button>
+
+            <button
+                class="discover-filter-btn"
+                data-category="costume">
+                Trang phục thời xưa
+            </button>
+
+            <button
+                class="discover-filter-btn"
+                data-category="pottery">
+                Gốm thời xưa
+            </button>
+
+        </section>
+
+
+        <section class="discover-content">
+
+            <section class="discover-result-title">
+
+                <p class="discover-result-label">
+                    BỘ SƯU TẬP
+                </p>
+
+                <h3 id="discoverResultTitle">
+                    Tất cả tác phẩm
+                </h3>
+
+                <p id="discoverResultCount">
+                    18 tác phẩm
+                </p>
+
+            </section>
+
+            <section
+                class="discover-grid"
+                id="discoverArtworkGrid">
+
+
+                <article
+                    class="discover-card"
+                    data-category="painting">
+
+                    <section class="discover-image">
+                        <img
+                            src="./images/tranhnhangian.jpg"
+                            alt="Tranh dân gian Việt Nam">
+
+                        <span class="discover-category">
+                            HỘI HỌA
+                        </span>
+                    </section>
+
+                    <section class="discover-card-content">
+
+                        <h4>
+                            Tranh dân gian Việt Nam
+                        </h4>
+
+                        <p class="discover-period">
+                            Nghệ thuật truyền thống
+                        </p>
+
+                        <p>
+                            Những hình ảnh gần gũi với đời sống,
+                            phong tục và văn hóa của người Việt.
+                        </p>
+
+                    </section>
+
+                </article>
+
+
+
+                <article
+                    class="discover-card"
+                    data-category="painting">
+
+                    <section class="discover-image">
+                        <img
+                            src="./images/tranhlua.png"
+                            alt="Tranh lụa Việt Nam">
+
+                        <span class="discover-category">
+                            HỘI HỌA
+                        </span>
+                    </section>
+
+                    <section class="discover-card-content">
+
+                        <h4>
+                            Vẻ đẹp tranh lụa
+                        </h4>
+
+                        <p class="discover-period">
+                            Nghệ thuật truyền thống
+                        </p>
+
+                        <p>
+                            Những đường nét mềm mại và màu sắc
+                            nhẹ nhàng tạo nên vẻ đẹp đặc trưng.
+                        </p>
+
+                    </section>
+
+                </article>
+
+
+
+                <article
+                    class="discover-card"
+                    data-category="painting">
+
+                    <section class="discover-image">
+                        <img
+                            src="./images/tranhsonmai.png"
+                            alt="Tranh sơn mài">
+
+                        <span class="discover-category">
+                            HỘI HỌA
+                        </span>
+                    </section>
+
+                    <section class="discover-card-content">
+
+                        <h4>
+                            Hội họa Việt Nam
+                        </h4>
+
+                        <p class="discover-period">
+                           Nghệ thuật truyền thống
+                        </p>
+
+                        <p>
+                           Nghệ thuật độc đáo kết hợp sơn ta cùng vàng, bạc, vỏ trứng để tạo nên vẻ đẹp sang trọng.
+                        </p>
+
+                    </section>
+
+                </article>
+  <article
+                    class="discover-card"
+                    data-category="painting">
+
+                    <section class="discover-image">
+                        <img
+                            src="./images/tranhsondau.png"
+                            alt="Tranh sơn dầu">
+
+                        <span class="discover-category">
+                            HỘI HỌA
+                        </span>
+                    </section>
+
+                    <section class="discover-card-content">
+
+                        <h4>
+                           Tranh sơn dầu
+                        </h4>
+
+                        <p class="discover-period">
+                          Nghệ thuật truyền thống
+                        </p>
+
+                        <p>
+                           Những tác phẩm giàu màu sắc và chiều sâu, thể hiện đa dạng vẻ đẹp của con người và thiên nhiên.
+                        </p>
+
+                    </section>
+
+                </article>
+
+
+                <article
+                    class="discover-card"
+                    data-category="painting">
+
+                    <section class="discover-image">
+                        <img
+                            src="./images/tranhmaunuoc.png"
+                            alt="Tranh màu nước">
+
+                        <span class="discover-category">
+                            HỘI HỌA
+                        </span>
+                    </section>
+
+                    <section class="discover-card-content">
+
+                        <h4>
+                           Tranh màu nước
+                        </h4>
+
+                        <p class="discover-period">
+                           Nghệ thuật truyền thống
+                        </p>
+
+                        <p>
+                          Những gam màu trong trẻo, nhẹ nhàng tạo nên cảm giác thanh thoát và tự nhiên.
+                        </p>
+
+                    </section>
+
+                </article>
+                 <article
+                    class="discover-card"
+                    data-category="painting">
+
+                    <section class="discover-image">
+                        <img
+                            src="./images/tranhkhacgo.png"
+                            alt="Tranh khắc gỗ">
+
+                        <span class="discover-category">
+                            HỘI HỌA
+                        </span>
+                    </section>
+
+                    <section class="discover-card-content">
+
+                        <h4>
+                           Tranh khắc gỗ
+                        </h4>
+
+                        <p class="discover-period">
+                          Nghệ thuật truyền thống
+                        </p>
+
+                        <p>
+                            Nghệ thuật tạo hình bằng đường nét khắc trên gỗ, mang vẻ đẹp mộc mạc và giàu tính đồ họa.
+                        </p>
+
+                    </section>
+
+                </article>
+                 <article
+                    class="discover-card"
+                    data-category="painting">
+
+                    <section class="discover-image">
+                        <img
+                            src="./images/tranhkhackimloai.png"
+                            alt="Tranh khắc kim loại ">
+
+                        <span class="discover-category">
+                            HỘI HỌA
+                        </span>
+                    </section>
+
+                    <section class="discover-card-content">
+
+                        <h4>
+                           Tranh khắc kim loại
+                        </h4>
+
+                        <p class="discover-period">
+                          Nghệ thuật truyền thống
+                        </p>
+
+                        <p>
+                            Những đường nét tinh xảo được tạo trên bản kim loại, thể hiện sự công phu và sáng tạo.
+                        </p>
+
+                    </section>
+
+                </article>
+                 <article
+                    class="discover-card"
+                    data-category="painting">
+
+                    <section class="discover-image">
+                        <img
+                            src="./images/tranhbotmau.png"
+                            alt="Tranh bột màu">
+
+                        <span class="discover-category">
+                            HỘI HỌA
+                        </span>
+                    </section>
+
+                    <section class="discover-card-content">
+
+                        <h4>
+                           Tranh bột màu
+                        </h4>
+
+                        <p class="discover-period">
+                          Nghệ thuật truyền thống
+                        </p>
+
+                        <p>
+                            Sử dụng màu bột để tạo nên những tác phẩm đa dạng về màu sắc và phong cách.
+                        </p>
+
+                    </section>
+
+                </article>
+                 <article
+                    class="discover-card"
+                    data-category="painting">
+
+                    <section class="discover-image">
+                        <img
+                            src="./images/tranhgiaydo.png"
+                            alt="Tranh giấy dó">
+
+                        <span class="discover-category">
+                            HỘI HỌA
+                        </span>
+                    </section>
+
+                    <section class="discover-card-content">
+
+                        <h4>
+                           Tranh giấy dó
+                        </h4>
+
+                        <p class="discover-period">
+                          Nghệ thuật truyền thống
+                        </p>
+
+                        <p>
+                           Kết hợp chất liệu giấy dó truyền thống với nghệ thuật tạo hình, mang vẻ đẹp gần gũi và giàu bản sắc.
+                        </p>
+
+                    </section>
+
+                </article>
+                <article
+                    class="discover-card"
+                    data-category="painting">
+
+                    <section class="discover-image">
+                        <img
+                            src="./images/tranhacrylic.png"
+                            alt="Tranh acrylic">
+
+                        <span class="discover-category">
+                            HỘI HỌA
+                        </span>
+                    </section>
+
+                    <section class="discover-card-content">
+
+                        <h4>
+                          Tranh acrylic
+                        </h4>
+
+                        <p class="discover-period">
+                          Nghệ thuật truyền thống
+                        </p>
+
+                        <p>
+                           Chất liệu hiện đại với màu sắc tươi sáng, linh hoạt, phù hợp với nhiều phong cách hội họa.
+                        </p>
+
+                    </section>
+
+                </article>
+                <article
+                    class="discover-card"
+                    data-category="sculpture">
+
+                    <section class="discover-image">
+                        <img
+                            src="./images/dieukhac.jpg"
+                            alt="Tượng">
+
+                        <span class="discover-category">
+                            ĐIÊU KHẮC
+                        </span>
+                    </section>
+
+                    <section class="discover-card-content">
+
+                        <h4>
+                           Tượng điêu khắc
+                        </h4>
+
+                        <p class="discover-period">
+                            Nghệ thuật dân gian
+                        </p>
+
+                        <p>
+                            Những mảng chạm khắc phản ánh
+                            sinh hoạt và tín ngưỡng cộng đồng.
+                        </p>
+
+                    </section>
+
+                </article>
+
+
+
+                <article
+                    class="discover-card"
+                    data-category="sculpture">
+
+                    <section class="discover-image">
+                        <img
+                            src="./images/phudieu.png"
+                            alt=" Phù điêu">
+
+                        <span class="discover-category">
+                            ĐIÊU KHẮC
+                        </span>
+                    </section>
+
+                    <section class="discover-card-content">
+
+                        <h4>
+                           Phù điêu
+                        </h4>
+
+                        <p class="discover-period">
+                            Nghệ thuật dân gian
+                        </p>
+
+                        <p>
+                             Hình ảnh được tạo nổi trên bề mặt đá, gỗ hoặc vật liệu khác, thường dùng để trang trí kiến trúc.
+                        </p>
+
+                    </section>
+
+                </article>
+
+                <article
+                    class="discover-card"
+                    data-category="sculpture">
+
+                    <section class="discover-image">
+                        <img
+                            src="./images/chamkhacdong.png"
+                            alt="Chạm khắc">
+
+                        <span class="discover-category">
+                            ĐIÊU KHẮC
+                        </span>
+                    </section>
+
+                    <section class="discover-card-content">
+
+                        <h4>
+                            Chạm khắc
+                        </h4>
+
+                        <p class="discover-period">
+                            Nghệ thuật truyền thống
+                        </p>
+
+                        <p>
+                            Nghệ thuật tạo hình bằng cách chạm, khắc trực tiếp lên gỗ, đá, đồng và các vật liệu khác.
+                        </p>
+
+                    </section>
+
+                </article>
+  <article
+                    class="discover-card"
+                    data-category="sculpture">
+
+                    <section class="discover-image">
+                        <img
+                            src="./images/dotrangtri.jpg"
+                            alt="Điêu khắc đồ trang trí ">
+
+                        <span class="discover-category">
+                            ĐIÊU KHẮC
+                        </span>
+                    </section>
+
+                    <section class="discover-card-content">
+
+                        <h4>
+                           Điêu khắc đồ trang trí
+                        </h4>
+
+                        <p class="discover-period">
+                            Nghệ thuật truyền thống
+                        </p>
+
+                        <p>
+                           Những hoa văn và họa tiết mang tính trang trí như rồng, phượng, hoa lá, mây nước.
+                        </p>
+
+                    </section>
+
+                </article>
+  <article
+                    class="discover-card"
+                    data-category="sculpture">
+
+                    <section class="discover-image">
+                        <img
+                            src="./images/tuongtho.png"
+                            alt="Tượng thờ">
+
+                        <span class="discover-category">
+                            ĐIÊU KHẮC
+                        </span>
+                    </section>
+
+                    <section class="discover-card-content">
+
+                        <h4>
+                            Tượng thờ
+                        </h4>
+
+                        <p class="discover-period">
+                            Nghệ thuật truyền thống
+                        </p>
+
+                        <p>
+                            Các tác phẩm phục vụ tín ngưỡng, thường là tượng Phật, Bồ Tát, La Hán, thần linh và các nhân vật tôn giáo.
+                        </p>
+
+                    </section>
+
+                </article>
+  <article
+                    class="discover-card"
+                    data-category="sculpture">
+
+                    <section class="discover-image">
+                        <img
+                            src="./images/chandung.png"
+                            alt="Chân dung">
+
+                        <span class="discover-category">
+                            ĐIÊU KHẮC
+                        </span>
+                    </section>
+
+                    <section class="discover-card-content">
+
+                        <h4>
+                            Chân dung
+                        </h4>
+
+                        <p class="discover-period">
+                            Nghệ thuật truyền thống
+                        </p>
+
+                        <p>
+                         Tác phẩm khắc họa diện mạo và thần thái của vua, quan, quý tộc hoặc nhân vật lịch sử.
+                        </p>
+
+                    </section>
+
+                </article>
+  <article
+                    class="discover-card"
+                    data-category="sculpture">
+
+                    <section class="discover-image">
+                        <img
+                            src="./images/linhvat.png"
+                            alt="Linh vật điêu khắc">
+
+                        <span class="discover-category">
+                            ĐIÊU KHẮC
+                        </span>
+                    </section>
+
+                    <section class="discover-card-content">
+
+                        <h4>
+                           Linh vật điêu khắc
+                        </h4>
+
+                        <p class="discover-period">
+                            Nghệ thuật truyền thống
+                        </p>
+
+                        <p>
+                           Hình tượng các con vật mang ý nghĩa biểu tượng như rồng, nghê, voi, hổ, ngựa và sư tử.
+                        </p>
+
+                    </section>
+
+                </article>
+  <article
+                    class="discover-card"
+                    data-category="sculpture">
+
+                    <section class="discover-image">
+                        <img
+                            src="./images/kientruc.png"
+                            alt="Kiến trúc điêu khắc">
+
+                        <span class="discover-category">
+                            ĐIÊU KHẮC
+                        </span>
+                    </section>
+
+                    <section class="discover-card-content">
+
+                        <h4>
+                            Kiến trúc điêu khắc
+                        </h4>
+
+                        <p class="discover-period">
+                            Nghệ thuật truyền thống
+                        </p>
+
+                        <p>
+                           Các chi tiết điêu khắc gắn liền với đình, chùa, tháp, cổng và bia đá, góp phần tạo nên vẻ đẹp của công trình.
+                        </p>
+
+                    </section>
+
+                </article>
+
+
+                <article
+                    class="discover-card"
+                    data-category="architecture">
+
+                    <section class="discover-image">
+                        <img
+                            src="./images/chuaco.png"
+                            alt="Chùa cổ Việt Nam">
+
+                        <span class="discover-category">
+                            KIẾN TRÚC
+                        </span>
+                    </section>
+
+                    <section class="discover-card-content">
+
+                        <h4>
+                            Chùa cổ Việt Nam
+                        </h4>
+
+                        <p class="discover-period">
+                            Kiến trúc truyền thống
+                        </p>
+
+                        <p>
+                            Không gian kiến trúc gắn liền với
+                            đời sống tinh thần của người Việt.
+                        </p>
+
+                    </section>
+
+                </article>
+
+
+
+                <article
+                    class="discover-card"
+                    data-category="architecture">
+
+                    <section class="discover-image">
+                        <img
+                            src="./images/dinhlang.png"
+                            alt="Đình làng Việt Nam">
+
+                        <span class="discover-category">
+                            KIẾN TRÚC
+                        </span>
+                    </section>
+
+                    <section class="discover-card-content">
+
+                        <h4>
+                            Đình làng truyền thống
+                        </h4>
+
+                        <p class="discover-period">
+                            Kiến trúc dân gian
+                        </p>
+
+                        <p>
+                            Công trình gắn với sinh hoạt
+                            văn hóa của cộng đồng làng xã.
+                        </p>
+
+                    </section>
+
+                </article>
+
+
+
+                <article
+                    class="discover-card"
+                    data-category="architecture">
+
+                    <section class="discover-image">
+                        <img
+                            src="./images/kientruccungdinh.png"
+                            alt="Kiến trúc cung đình">
+
+                        <span class="discover-category">
+                            KIẾN TRÚC
+                        </span>
+                    </section>
+
+                    <section class="discover-card-content">
+
+                        <h4>
+                            Kiến trúc cung đình
+                        </h4>
+
+                        <p class="discover-period">
+                            Kiến trúc lịch sử
+                        </p>
+
+                        <p>
+                            Những công trình mang dấu ấn
+                            của các triều đại Việt Nam.
+                        </p>
+
+                    </section>
+
+                </article>
+ <article
+                    class="discover-card"
+                    data-category="architecture">
+
+                    <section class="discover-image">
+                        <img
+                            src="./images/thanhluy.png"
+                            alt="Thành lũy, thành quách">
+
+                        <span class="discover-category">
+                            KIẾN TRÚC
+                        </span>
+                    </section>
+
+                    <section class="discover-card-content">
+
+                        <h4>
+                            Thành lũy, thành quách
+                        </h4>
+
+                        <p class="discover-period">
+                            Kiến trúc lịch sử
+                        </p>
+
+                        <p>
+                           Thể hiện khả năng phòng thủ và lịch sử quân sự của dân tộc.
+                        </p>
+
+                    </section>
+
+                </article>
+                 <article
+                    class="discover-card"
+                    data-category="architecture">
+
+                    <section class="discover-image">
+                        <img
+                            src="./images/vanmieu.png"
+                            alt="Văn miếu">
+
+                        <span class="discover-category">
+                            KIẾN TRÚC
+                        </span>
+                    </section>
+
+                    <section class="discover-card-content">
+
+                        <h4>
+                            Văn miếu
+                        </h4>
+
+                        <p class="discover-period">
+                            Kiến trúc lịch sử
+                        </p>
+
+                        <p>
+                            Biểu tượng cho truyền thống hiếu học và coi trọng tri thức của người Việt.
+                        </p>
+
+                    </section>
+
+                </article>
+                 <article
+                    class="discover-card"
+                    data-category="architecture">
+
+                    <section class="discover-image">
+                        <img
+                            src="./images/nharong.png"
+                            alt="Nhà rông, nhà dài">
+
+                        <span class="discover-category">
+                            KIẾN TRÚC
+                        </span>
+                    </section>
+
+                    <section class="discover-card-content">
+
+                        <h4>
+                            Nhà rông, nhà dài
+                        </h4>
+
+                        <p class="discover-period">
+                            Kiến trúc lịch sử
+                        </p>
+
+                        <p>
+                            Thể hiện bản sắc văn hóa, phong tục và tinh thần cộng đồng của các dân tộc.
+                        </p>
+
+                    </section>
+
+                </article>
+
+<article
+                    class="discover-card"
+                    data-category="architecture">
+
+                    <section class="discover-image">
+                        <img
+                            src="./images/cauco.png"
+                            alt="Cầu cổ">
+
+                        <span class="discover-category">
+                            KIẾN TRÚC
+                        </span>
+                    </section>
+
+                    <section class="discover-card-content">
+
+                        <h4>
+                            Cầu cổ
+                        </h4>
+
+                        <p class="discover-period">
+                            Kiến trúc lịch sử
+                        </p>
+
+                        <p>
+                            Gắn liền với đời sống dân cư, đồng thời thể hiện nét đẹp kiến trúc truyền thống.
+                        </p>
+
+                    </section>
+
+                </article>
+
+                
+
+                <article
+                    class="discover-card"
+                    data-category="folk">
+
+                    <section class="discover-image">
+                        <img
+                            src="./images/catru.jpg"
+                            alt="Ca trù Việt Nam">
+
+                        <span class="discover-category">
+                            NGHỆ THUẬT NHÂN GIAN
+                        </span>
+                    </section>
+
+                    <section class="discover-card-content">
+
+                        <h4>
+                            Ca trù
+                        </h4>
+
+                        <p class="discover-period">
+                            Âm nhạc truyền thống
+                        </p>
+
+                        <p>
+                            Một loại hình nghệ thuật truyền thống
+                            có giá trị văn hóa lâu đời.
+                        </p>
+
+                    </section>
+
+                </article>
+
+
+
+                <article
+                    class="discover-card"
+                    data-category="folk">
+
+                    <section class="discover-image">
+                        <img
+                            src="./images/muaroinuoc.png"
+                            alt="Múa rối nước">
+
+                        <span class="discover-category">
+                            NGHỆ THUẬT NHÂN GIAN
+                        </span>
+                    </section>
+
+                    <section class="discover-card-content">
+
+                        <h4>
+                            Múa rối nước
+                        </h4>
+
+                        <p class="discover-period">
+                            Nghệ thuật dân gian
+                        </p>
+
+                        <p>
+                           Sinh ra từ nền văn minh lúa nước, dùng nước làm sân khấu, rối di chuyển tự nhiên trên mặt nước kết hợp nhạc và lời nói.
+                        </p>
+
+                    </section>
+
+                </article>
+
+
+
+                <article
+                    class="discover-card"
+                    data-category="folk">
+
+                    <section class="discover-image">
+                        <img
+                            src="./images/quanho.png"
+                            alt="Quan họ Bắc Ninh">
+
+                        <span class="discover-category">
+                            NGHỆ THUẬT NHÂN GIAN
+                        </span>
+                    </section>
+
+                    <section class="discover-card-content">
+
+                        <h4>
+                           Quan họ Bắc Ninh
+                        </h4>
+
+                        <p class="discover-period">
+                            Nghệ thuật biểu diễn
+                        </p>
+
+                        <p>
+                            Hát đối đáp giữa nam nữ, không nhạc đệm cố định, giai điệu ngọt ngào, lời ca thơ mộng nói về tình yêu và quê hương.
+                        </p>
+
+                    </section>
+
+                </article>
+
+  <article
+                    class="discover-card"
+                    data-category="folk">
+
+                    <section class="discover-image">
+                        <img
+                            src="./images/doncataitu.png"
+                            alt=" Đờn ca tài tử">
+
+                        <span class="discover-category">
+                            NGHỆ THUẬT NHÂN GIAN
+                        </span>
+                    </section>
+
+                    <section class="discover-card-content">
+
+                        <h4>
+                         Đờn ca tài tử
+                        </h4>
+
+                        <p class="discover-period">
+                            Nghệ thuật biểu diễn
+                        </p>
+
+                        <p>
+                            Âm nhạc dân gian cao cấp của miền Nam, chơi và hát theo lối tự do, sáng tạo tại chỗ, thể hiện tâm tư người dân trên sông nước.
+                        </p>
+
+                    </section>
+
+                </article>
+<article
+                    class="discover-card"
+                    data-category="folk">
+
+                    <section class="discover-image">
+                        <img
+                            src="./images/tranhdongho.png"
+                            alt=" Tranh Đông Hồ">
+
+                        <span class="discover-category">
+                            NGHỆ THUẬT NHÂN GIAN
+                        </span>
+                    </section>
+
+                    <section class="discover-card-content">
+
+                        <h4>
+                        Tranh Đông Hồ
+                        </h4>
+
+                        <p class="discover-period">
+                            Nghệ thuật biểu diễn
+                        </p>
+
+                        <p>
+                           Trong văn hóa dân gian Việt Nam, tranh Đông Hồ đã đi vào nếp sống, trở thành món ăn tinh thần trong đời sống văn hóa của người Việt, đặc biệt vào dịp Tết Nguyên Đán
+                        </p>
+
+                    </section>
+
+                </article>
+                <article
+                    class="discover-card"
+                    data-category="folk">
+
+                    <section class="discover-image">
+                        <img
+                            src="./images/tranhhangdong.png"
+                            alt=" Tranh Hàng Trống">
+
+                        <span class="discover-category">
+                            NGHỆ THUẬT NHÂN GIAN
+                        </span>
+                    </section>
+
+                    <section class="discover-card-content">
+
+                        <h4>
+                      Tranh Hàng Trống
+                        </h4>
+
+                        <p class="discover-period">
+                            Nghệ thuật biểu diễn
+                        </p>
+
+                        <p>
+                          Tranh Hàng Trống là một trong những dòng tranh dân gian Việt Nam được làm chủ yếu tại phố Hàng Nón, Hàng Trống của Hà Nội xưa.
+                        </p>
+
+                    </section>
+
+                </article>
+  
+
+                <article
+                    class="discover-card"
+                    data-category="costume">
+
+                    <section class="discover-image">
+                        <img
+                            src="./images/aodaitruyenthong.jpg"
+                            alt="Áo dài truyền thống">
+
+                        <span class="discover-category">
+                            TRANG PHỤC
+                        </span>
+                    </section>
+
+                    <section class="discover-card-content">
+
+                        <h4>
+                            Áo dài truyền thống
+                        </h4>
+
+                        <p class="discover-period">
+                            Trang phục Việt Nam
+                        </p>
+
+                        <p>
+                            Trang phục mang đậm dấu ấn
+                            văn hóa và bản sắc Việt Nam.
+                        </p>
+
+                    </section>
+
+                </article>
+  <article
+                    class="discover-card"
+                    data-category="costume">
+
+                    <section class="discover-image">
+                        <img
+                            src="./images/khandong.png"
+                            alt="Khăn đóng">
+
+                        <span class="discover-category">
+                            TRANG PHỤC
+                        </span>
+                    </section>
+
+                    <section class="discover-card-content">
+
+                        <h4>
+                           Khăn đóng
+                        </h4>
+
+                        <p class="discover-period">
+                            Văn hóa truyền thống
+                        </p>
+
+                        <p>
+                           Thể hiện sự trang trọng và nét văn hóa truyền thống trong cách ăn mặc.
+                        </p>
+
+                    </section>
+
+                </article>
+
+
+
+                <article
+                    class="discover-card"
+                    data-category="costume">
+
+                    <section class="discover-image">
+                        <img
+                            src="./images/aotuthan.jpg"
+                            alt="Áo tứ thân">
+
+                        <span class="discover-category">
+                            TRANG PHỤC
+                        </span>
+                    </section>
+
+                    <section class="discover-card-content">
+
+                        <h4>
+                            Áo tứ thân
+                        </h4>
+
+                        <p class="discover-period">
+                            Trang phục truyền thống
+                        </p>
+
+                        <p>
+                            Một hình ảnh quen thuộc trong
+                            văn hóa và đời sống người Việt xưa.
+                        </p>
+
+                    </section>
+
+                </article>
+
+
+
+                <article
+                    class="discover-card"
+                    data-category="costume">
+
+                    <section class="discover-image">
+                        <img
+                            src="./images/trangphuc.jpg"
+                            alt="Trang phục cung đình">
+
+                        <span class="discover-category">
+                            TRANG PHỤC
+                        </span>
+                    </section>
+
+                    <section class="discover-card-content">
+
+                        <h4>
+                            Trang phục cung đình
+                        </h4>
+
+                        <p class="discover-period">
+                            Văn hóa cung đình
+                        </p>
+
+                        <p>
+                            Hoa văn và kiểu dáng thể hiện
+                            địa vị, nghi lễ và văn hóa.
+                        </p>
+
+                    </section>
+
+                </article>
+
+                <article
+                    class="discover-card"
+                    data-category="costume">
+
+                    <section class="discover-image">
+                        <img
+                            src="./images/aonguthan.jpg"
+                            alt="Áo ngũ thân">
+
+                        <span class="discover-category">
+                            TRANG PHỤC
+                        </span>
+                    </section>
+
+                    <section class="discover-card-content">
+
+                        <h4>
+                            Áo ngũ thân
+                        </h4>
+
+                        <p class="discover-period">
+                            Văn hóa truyền thống
+                        </p>
+
+                        <p>
+                            Thể hiện sự kín đáo, trang trọng và nền nếp của người Việt.
+                        </p>
+
+                    </section>
+
+                </article>
+
+ <article
+                    class="discover-card"
+                    data-category="costume">
+
+                    <section class="discover-image">
+                        <img
+                            src="./images/aogiaolinh.jpg"
+                            alt="Áo Giao Lĩnh">
+
+                        <span class="discover-category">
+                            TRANG PHỤC
+                        </span>
+                    </section>
+
+                    <section class="discover-card-content">
+
+                        <h4>
+                            Áo Giao Lĩnh
+                        </h4>
+
+                        <p class="discover-period">
+                            Văn hóa truyền thống
+                        </p>
+
+                        <p>
+                            Gắn với trang phục truyền thống lâu đời và văn hóa cổ Việt Nam.
+                        </p>
+
+                    </section>
+
+                </article>
+<article
+                    class="discover-card"
+                    data-category="costume">
+
+                    <section class="discover-image">
+                        <img
+                            src="./images/aovienlinh.jpg"
+                            alt="Áo Vien Lĩnh">
+
+                        <span class="discover-category">
+                            TRANG PHỤC
+                        </span>
+                    </section>
+
+                    <section class="discover-card-content">
+
+                        <h4>
+                            Áo Viên Lĩnh
+                        </h4>
+
+                        <p class="discover-period">
+                            Văn hóa cung đình
+                        </p>
+
+                        <p>
+                            Mang nét trang trọng, lịch sự, thường gắn với tầng lớp quan lại và quý tộc.
+                        </p>
+
+                    </section>
+
+                </article>
+
+<article
+                    class="discover-card"
+                    data-category="costume">
+
+                    <section class="discover-image">
+                        <img
+                            src="./images/aonhatbinh.jpg"
+                            alt="Áo Nhật Bình">
+
+                        <span class="discover-category">
+                            TRANG PHỤC
+                        </span>
+                    </section>
+
+                    <section class="discover-card-content">
+
+                        <h4>
+                            Áo Nhật Bình
+                        </h4>
+
+                        <p class="discover-period">
+                            Văn hóa cung đình
+                        </p>
+
+                        <p>
+                            Thể hiện địa vị, sự quý phái và vẻ đẹp của phụ nữ hoàng gia.
+                        </p>
+
+                    </section>
+
+                </article>
+<article
+                    class="discover-card"
+                    data-category="costume">
+
+                    <section class="discover-image">
+                        <img
+                            src="./images/aobaba.jpg"
+                            alt="Áo Bà Ba">
+
+                        <span class="discover-category">
+                            TRANG PHỤC
+                        </span>
+                    </section>
+
+                    <section class="discover-card-content">
+
+                        <h4>
+                            Áo Bà Ba
+                        </h4>
+
+                        <p class="discover-period">
+                            Văn hóa truyền thống
+                        </p>
+
+                        <p>
+                            Biểu tượng cho sự giản dị, gần gũi và cuộc sống của người dân Nam Bộ.
+                        </p>
+
+                    </section>
+
+                </article>
+<article
+                    class="discover-card"
+                    data-category="costume">
+
+                    <section class="discover-image">
+                        <img
+                            src="./images/longbao.jpg"
+                            alt="Long BÀo">
+
+                        <span class="discover-category">
+                            TRANG PHỤC
+                        </span>
+                    </section>
+
+                    <section class="discover-card-content">
+
+                        <h4>
+                            Long Bào
+                        </h4>
+
+                        <p class="discover-period">
+                            Văn hóa cung đình
+                        </p>
+
+                        <p>
+                           Biểu tượng cho quyền lực tối cao, địa vị và sự uy nghiêm của vua trong xã hội phong kiến Việt Nam.
+                        </p>
+
+                    </section>
+
+                </article>
+
+                <article
+                    class="discover-card"
+                    data-category="pottery">
+
+                    <section class="discover-image">
+                        <img
+                            src="./images/gombattrang.jpg"
+                            alt="Gốm Bát Tràng">
+
+                        <span class="discover-category">
+                            GỐM THỜI XƯA
+                        </span>
+                    </section>
+
+                    <section class="discover-card-content">
+
+                        <h4>
+                            Gốm Bát Tràng
+                        </h4>
+
+                        <p class="discover-period">
+                            Gốm truyền thống
+                        </p>
+
+                        <p>
+                            Dòng gốm nổi tiếng với lịch sử lâu đời
+                            và kỹ thuật chế tác đặc sắc.
+                        </p>
+
+                    </section>
+
+                </article>
+
+
+
+                <article
+                    class="discover-card"
+                    data-category="pottery">
+
+                    <section class="discover-image">
+                        <img
+                            src="./images/gomchudau.jpg"
+                            alt="Gốm Chu Đậu">
+
+                        <span class="discover-category">
+                            GỐM THỜI XƯA
+                        </span>
+                    </section>
+
+                    <section class="discover-card-content">
+
+                        <h4>
+                            Gốm Chu Đậu
+                        </h4>
+
+                        <p class="discover-period">
+                            Gốm cổ Việt Nam
+                        </p>
+
+                        <p>
+                            Những sản phẩm gốm mang dấu ấn
+                            mỹ thuật và kỹ thuật truyền thống.
+                        </p>
+
+                    </section>
+
+                </article>
+
+
+
+                <article
+                    class="discover-card"
+                    data-category="pottery">
+
+                    <section class="discover-image">
+                        <img
+                            src="./images/gomly.jpg"
+                            alt="Gốm thời Lý">
+
+                        <span class="discover-category">
+                            GỐM THỜI XƯA
+                        </span>
+                    </section>
+
+                    <section class="discover-card-content">
+
+                        <h4>
+                            Gốm thời Lý
+                        </h4>
+
+                        <p class="discover-period">
+                            Nghệ thuật thời Lý
+                        </p>
+
+                        <p>
+                            Vẻ đẹp tinh tế của đồ gốm
+                            qua các giai đoạn lịch sử.
+                        </p>
+
+                    </section>
+
+                </article>
+ <article
+                    class="discover-card"
+                    data-category="pottery">
+
+                    <section class="discover-image">
+                        <img
+                            src="./images/gomdongson.jpg"
+                            alt="Gốm Đông Sơn">
+
+                        <span class="discover-category">
+                            GỐM THỜI XƯA
+                        </span>
+                    </section>
+
+                    <section class="discover-card-content">
+
+                        <h4>
+                           Gốm Đông Sơn
+                        </h4>
+
+                        <p class="discover-period">
+                            Nghệ thuật Đông Sơn
+                        </p>
+
+                        <p>
+                            Phản ánh đời sống, tín ngưỡng và kỹ thuật của cư dân Việt cổ.
+                        </p>
+
+                    </section>
+
+                </article>
+<article
+                    class="discover-card"
+                    data-category="pottery">
+
+                    <section class="discover-image">
+                        <img
+                            src="./images/gomtran.jpg"
+                            alt="Gốm Thời Trần">
+
+                        <span class="discover-category">
+                            GỐM THỜI XƯA
+                        </span>
+                    </section>
+
+                    <section class="discover-card-content">
+
+                        <h4>
+                           Gốm Thời Trần
+                        </h4>
+
+                        <p class="discover-period">
+                            Nghệ thuật thời trần
+                        </p>
+
+                        <p>
+                            Thể hiện sự phát triển của kỹ thuật sản xuất và nghệ thuật trang trí gốm thời Trần.
+                        </p>
+
+                    </section>
+
+                </article>
+<article
+                    class="discover-card"
+                    data-category="pottery">
+
+                    <section class="discover-image">
+                        <img
+                            src="./images/gomoceo.jpg"
+                            alt="Gốm Óc Eo">
+
+                        <span class="discover-category">
+                            GỐM THỜI XƯA
+                        </span>
+                    </section>
+
+                    <section class="discover-card-content">
+
+                        <h4>
+                          Gốm Óc Eo
+                        </h4>
+
+                        <p class="discover-period">
+                            Nghệ thuật Óc Eo
+                        </p>
+
+                        <p>
+                            Thể hiện nền văn hóa cổ ở Nam Bộ và sự giao lưu với các nền văn hóa bên ngoài.
+                        </p>
+
+                    </section>
+
+                </article>
+<article
+                    class="discover-card"
+                    data-category="pottery">
+
+                    <section class="discover-image">
+                        <img
+                            src="./images/gomhaule.jpg"
+                            alt="Gốm Hậu Lê">
+
+                        <span class="discover-category">
+                            GỐM THỜI XƯA
+                        </span>
+                    </section>
+
+                    <section class="discover-card-content">
+
+                        <h4>
+                          Gốm Hậu Lê
+                        </h4>
+
+                        <p class="discover-period">
+                            Nghệ thuật hậu Lê
+                        </p>
+
+                        <p>
+                            Phản ánh sự phát triển mạnh của gốm mỹ thuật, đặc biệt là các dòng gốm men và gốm xuất khẩu.
+                        </p>
+
+                    </section>
+
+                </article>
+<article
+                    class="discover-card"
+                    data-category="pottery">
+
+                    <section class="discover-image">
+                        <img
+                            src="./images/gommac.jpg"
+                            alt="Gốm thời mạc">
+
+                        <span class="discover-category">
+                            GỐM THỜI XƯA
+                        </span>
+                    </section>
+
+                    <section class="discover-card-content">
+
+                        <h4>
+                          Gốm thời Mạc 
+                        </h4>
+
+                        <p class="discover-period">
+                            Nghệ thuật thời Mạc
+                        </p>
+
+                        <p>
+                           Thể hiện sự phát triển của nghệ thuật gốm Việt Nam thế kỷ XVI, nổi bật với hoa văn trang trí phong phú và kỹ thuật chế tác tinh xảo.
+                        </p>
+
+                    </section>
+
+                </article>
+                <article
+                    class="discover-card"
+                    data-category="pottery">
+
+                    <section class="discover-image">
+                        <img
+                            src="./images/gomnguyen.jpg"
+                            alt="Gốm thời Nguyễn">
+
+                        <span class="discover-category">
+                            GỐM THỜI XƯA
+                        </span>
+                    </section>
+
+                    <section class="discover-card-content">
+
+                        <h4>
+                          Gốm thời Nguyễn 
+                        </h4>
+
+                        <p class="discover-period">
+                            Nghệ thuật thời Nguyễn
+                        </p>
+
+                        <p>
+                           Thể hiện sự phát triển của gốm cung đình, với nhiều sản phẩm phục vụ hoàng gia và đời sống.
+                        </p>
+
+                    </section>
+
+                </article>
+            </section>
+
+            <section
+                class="discover-empty"
+                id="discoverEmpty">
+
+                <h3>
+                    Không tìm thấy tác phẩm
+                </h3>
+
+                <p>
+                    Chủ đề này hiện chưa có tác phẩm.
+                </p>
+
+            </section>
+
+        </section>
+
+    </section>
+
+</main>
+
+    <footer>
+
+
+        <section class="footer-brand">
+
+
+            <h2>
+
+                Nét Việt
+
+            </h2>
+
+
+            <p>
+
+                Lịch sử trong từng nét vẽ
+
+            </p>
+
+
+        </section>
+
+
+
+        <nav class="footer-links">
+
+
+            <section>
+
+
+                <h3>
+
+                    Khám phá
+
+                </h3>
+
+
+                <a href="#artworks">
+
+                    Tác phẩm
+
+                </a>
+
+
+                <a href="#figures">
+
+                    Nhân vật
+
+                </a>
+
+
+                <a href="#explore">
+
+                    Timeline
+
+                </a>
+
+
+                <a href="#stories">
+
+                    Câu chuyện
+
+                </a>
+
+
+            </section>
+
+
+
+            <section>
+
+
+                <h3>
+
+                    Chủ đề
+
+                </h3>
+
+
+                <a href="#">
+
+                    Hội họa
+
+                </a>
+
+
+                <a href="#">
+
+                    Kiến trúc
+
+                </a>
+
+
+                <a href="#">
+
+                    Điêu khắc
+
+                </a>
+
+
+                <a href="#">
+
+                    Nghệ thuật dân gian
+
+                </a>
+
+
+            </section>
+
+
+
+            <section>
+
+
+                <h3>
+
+                    Kết nối
+
+                </h3>
+
+
+                <a href="#">
+
+                    Facebook
+
+                </a>
+
+
+                <a href="#">
+
+                    Instagram
+
+                </a>
+
+
+                <a href="#">
+
+                    YouTube
+
+                </a>
+
+
+                <a href="#">
+
+                    Email
+
+                </a>
+
+
+            </section>
+
+
+        </nav>
+
+
+
+        <section class="footer-bottom">
+
+
+            <p>
+
+                2026 Nét Việt.
+                Lịch sử trong từng nét vẽ.
+
+            </p>
+
+
+            <p>
+
+                Được tạo nên với tình yêu
+                dành cho văn hóa Việt Nam.
+
+            </p>
+
+
+        </section>
+
+
+    </footer>
+
+
+</main>
+
+
+<script src="./stylejavascript.js"></script>
+
+</body>
+
+</html>
